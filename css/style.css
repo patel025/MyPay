@@ -19,6 +19,7 @@ body {
     font-size: 13px;
     color: #3a3a3a;
     background-color: #fff;
+    top: 0 !important;
 }
  
 ::-webkit-scrollbar {
@@ -145,6 +146,24 @@ select{cursor: pointer;outline: 0;}
 .Header .navbar .nav-item .dropdown-menu li{border-bottom:1px solid #0c4c8a}
 .Header .navbar .nav-item .dropdown-menu li a{display:block;padding:10px 15px;color:#fff;font-size:15px;font-weight:600;text-transform:capitalize}
 .Header .navbar .nav-item .dropdown-menu li a:hover{background-color:#fff;color:#0c4c8a}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd{ display:none; }
+
+#google_translate_element{
+    height: 42px;
+    overflow: hidden;
+    padding: 1px 0;
+}
+#google_translate_element .goog-te-combo{
+    margin: 0;
+    border: 1px solid #ddd;
+    padding: 10px 10px;
+    border-radius: 7px;
+    display: block;
+    width: 100%;
+    font-family: 'Mulish';
+    font-weight: 700;
+}
 
 
 
@@ -517,14 +536,103 @@ footer{
 
 
 
+.TabletArea{
+    padding: 50px 0;
+}
+.TabletArea .TabletBox{
+    background-color: #f6f5f5;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.TabletArea .TabletBox .TabletLeft{
+    width: 35%;
+}
+.TabletArea .TabletBox .TabletLeft h3{
+    color: #000;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.TabletArea .TabletBox .TabletLeft p{
+    font-size: 14px;
+    color: #535252;
+    font-weight: 600;
+    line-height: 22px;
+}
+.TabletArea .TabletBox .TabletRight{
+    width: 65%;
+}
+.TabletArea .TabletBox .TabletRight img{ width:100% }
+
+.PaymentCardArea{
+    padding: 50px 0;
+    background-color: #f6f5f5;
+}
+.PaymentCardArea .PaymentCardHead{
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.PaymentCardArea .PaymentCardHead h3{
+    color: #1359a1;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.PaymentCardArea .PaymentCardHead p{
+    font-size: 16px;
+    color: #535252;
+    font-weight: 600;
+    line-height: 28px;
+}
+.PaymentCardArea .PaymentCardBody{
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+    text-align: center;
+}
+.PaymentCardArea .PaymentCardBody ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 0 40px 0;
+}
+.PaymentCardArea .PaymentCardBody ul li{
+    width: 100%;
+    text-align: center;
+}
+.PaymentCardArea .PaymentCardBody ul li img{max-height: 40px;}
 
 
+.PaymentCardArea .PaymentCardBody p{
+    font-size: 14px;
+    color: #535252;
+    font-weight: 600;
+    line-height: 22px;
+}
 
-
-
-
-
-
+.SupportArea{
+    padding: 50px 0 0 0;
+}
+.SupportArea h3{
+    color: #000;
+    font-size: 36px;
+    margin: 0 0 40px 0;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+}
+.SupportArea h3 span{
+    color: #1359a1;
+    display: block;
+}
+.SupportArea figure{}
+.SupportArea figure img{}
 
 
 
