@@ -368,7 +368,7 @@ footer{
 .Footer .Foots ul{}
 .Footer .Foots ul li{
     position: relative;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 0px;
     margin: 0 0 10px 0;
 }
 
@@ -381,6 +381,7 @@ footer{
     left: 4px;
     font-size: 15px;
     font-weight: 600;
+    display: none;
 }
 
 .Footer .Foots ul li a{
@@ -389,6 +390,23 @@ footer{
     font-size: 15px;
 }
 .Footer .Foots ul li a:hover{
+    color: #fff;
+}
+
+.Footer .Foots ol{}
+.Footer .Foots ol li{
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+.Footer .Foots ol li a{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    transition: 0.5s all ease-in-out;
+}
+.Footer .Foots ol li a:hover{
+    background: #0c4c8a;
     color: #fff;
 }
 
