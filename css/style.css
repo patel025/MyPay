@@ -135,24 +135,60 @@ select{cursor: pointer;outline: 0;}
     max-width: 1240px;
 }
 
-.Header{background-color: #fff;padding: 10px 0;box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);z-index: 99;position: relative;}
+.Header{background-color: #fff;padding: 10px 20px;/* box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1); */z-index: 99;position: relative;}
 .Header .navbar{padding:0;}
 .Header .navbar .navbar-brand{padding:0;margin:0;width: 140px;}
-.Header .navbar .navbar-collapse{ justify-content: end;}
+.Header .navbar .navbar-collapse{justify-content: space-between;padding: 0 0 0 100px;}
 .Header .navbar .nav-item{margin:0 0 0 10px}
-.Header .navbar .nav-item .nav-link{color: #000;font-size: 14px;padding: 12px 15px;border-radius: 50px;font-weight: 600;letter-spacing: 0.3px;}
+.Header .navbar .nav-item .nav-link{color: #000;font-size: 14px;padding: 8px 15px;font-weight: 600;letter-spacing: 0.3px;transition: 0.5s all ease-in-out;}
 .Header .navbar .nav-item .nav-link:hover{ color:#0c4c8a }
+
+.Header .navbar .nav-item .nav-link.Login{
+    border: 2px solid #0d4d89;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #0d4d89;
+    padding: 8px 20px;
+}
+.Header .navbar .nav-item .nav-link.Touch{
+    border: 2px solid #0d4d89;
+    border-radius: 8px;
+    background-color: #0d4d89;
+    color: #fff;
+    padding: 8px 20px;
+}
+
+
+.Header .navbar .nav-item .nav-link.Login:hover{
+    background-color: #0d4d89;
+    color: #fff;
+}
+.Header .navbar .nav-item .nav-link.Touch:hover{
+    background-color: #fff;
+    color: #0d4d89;
+}
+
+
 .Header .navbar .nav-item .dropdown-menu{padding:0;margin:0;background-color:#0c4c8a;min-width:200px;right:0;left:auto;overflow:hidden;border:2px solid #0c4c8a;border-radius:7px;box-shadow:0 5px 10px #ddd}
 .Header .navbar .nav-item .dropdown-menu li{border-bottom:1px solid #0c4c8a}
 .Header .navbar .nav-item .dropdown-menu li a{display:block;padding:10px 15px;color:#fff;font-size:15px;font-weight:600;text-transform:capitalize}
 .Header .navbar .nav-item .dropdown-menu li a:hover{background-color:#fff;color:#0c4c8a}
 .VIpgJd-ZVi9od-ORHb-OEVmcd{ display:none; }
 #google_translate_element{height: 42px;overflow: hidden;padding: 1px 0;}
-#google_translate_element .goog-te-combo{margin: 0;border: 1px solid #ddd;padding: 10px 10px;border-radius: 7px;display: block;width: 100%;font-family: 'Mulish';font-weight: 700;}
+#google_translate_element .goog-te-combo{margin: 0;border: none;padding: 10px 10px;border-radius: 7px;display: block;width: 100%;font-family: 'Mulish';font-weight: 700;}
+
+.TranslateBox{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.TranslateBox i{}
 
 .SlideArea{padding:50px 0 100px}
 .SlideArea .SlideBox{display:flex;position:relative}
-.SlideArea .SlideBox:before{content:'';width:calc(100% + 50px);position:absolute;height:100%;border:3px solid #0c4c8a;border-radius:20px;left:-25px;top:50px}
+.SlideArea .SlideBox:before{content:'';width:calc(100% + 50px);position:absolute;height:100%;border:3px solid #0c4c8a;border-radius: 20px;left:-25px;top:50px;border-bottom: none;}
 .SlideArea .SlideBox .SlideLeft{width:40%;padding:0 20px 0 0;position:relative;z-index:1}
 .SlideArea .SlideBox .SlideLeft article{background-color:#0c4c8a;padding:30px;border-radius:10px;margin:0 0 20px;background-color:#85acd4}
 .SlideArea .SlideBox .SlideLeft article h1{color:#fff;font-weight:800;margin:0 0 20px 0;font-size:35px}
@@ -163,7 +199,7 @@ select{cursor: pointer;outline: 0;}
 .SlideArea .SlideBox .SlideRight figure{border-radius:10px;overflow:hidden;position:relative;margin:0}
 .SlideArea .SlideBox .SlideRight figure img{width:100%}
 
-.TailoreArea{padding:50px 0}
+.TailoreArea{padding: 30px 0 50px 0;}
 .TailoreArea .TailoreBox{position:relative}
 .TailoreArea .TailoreBox figure{border-radius:10px;overflow:hidden;margin:0;background-color:#000}
 .TailoreArea .TailoreBox figure img{opacity:.8}
@@ -206,9 +242,9 @@ footer .Footer .Foots p a:hover{text-decoration:underline!important}
 footer .Copyright{border-top:1px solid #fff;padding:10px 0 10px 0}
 footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;letter-spacing:.5px}
 
-.SystemArea{padding:50px 0 80px;position:relative;overflow:hidden}
-.SystemArea:before{content:'';width:100%;position:absolute;height:100%;border:3px solid #0c4c8a;border-radius:20px 0 0 0;left:10%;top:120px;border-right:0;border-bottom:0}
-.SystemArea h2{color:#000;font-size:40px;margin:0 0 80px 0;font-weight:800;text-transform:capitalize}
+.SystemArea{padding: 10px 0 80px;position:relative;overflow:hidden}
+.SystemArea:before{content:'';width:100%;position:absolute;height:100%;border:3px solid #0c4c8a;border-radius:20px 0 0 0;left:10%;top: 110px;border-right:0;border-bottom:0;border-top: none;border: none;}
+.SystemArea h2{color:#000;font-size:40px;margin: 0 0 50px 0;font-weight:800;text-transform:capitalize}
 .SystemArea .SystemLeft{margin:0 30px 0 -100px;position:relative}
 .SystemArea .SystemLeft figure{margin:0;border-radius:10px;overflow:hidden;width:90%}
 .SystemArea .SystemLeft figure img{width:100%}
@@ -244,10 +280,10 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .PaymentCardArea .PaymentCardBody ul li img{max-height:40px}
 .PaymentCardArea .PaymentCardBody p{font-size:14px;color:#535252;font-weight:600;line-height:22px}
 
-.SupportArea{padding:50px 0 0 0}
+.SupportArea{padding:50px 0 50px 0}
 .SupportArea h3{color:#000;font-size:36px;margin:0 0 40px 0;font-weight:800;text-transform:capitalize;text-align:center}
 .SupportArea h3 span{color:#1359a1;display:block}
-
+.SupportArea figure{ margin:0 }
 
 
 
