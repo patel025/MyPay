@@ -136,11 +136,11 @@ select{cursor: pointer;outline: 0;}
 }
 
 .Header{background-color: #fff;padding: 10px 20px;/* box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1); */z-index: 99;position: relative;}
-.Header .navbar{padding:0;}
+.Header .navbar{padding:0;position: static;}
 .Header .navbar .navbar-brand{padding:0;margin:0;width: 130px;}
 .Header .navbar .navbar-collapse{justify-content: space-between;padding: 0 0 0 40px;}
 .Header .navbar .nav-item{margin:0 0 0 10px}
-.Header .navbar .nav-item .nav-link{color: #000;font-size: 14px;padding: 8px 15px;font-weight: 600;letter-spacing: 0.3px;transition: 0.5s all ease-in-out;}
+.Header .navbar .nav-item .nav-link{color: #000;font-size: 14px;padding: 13px 15px;font-weight: 600;letter-spacing: 0.3px;transition: 0.5s all ease-in-out;}
 .Header .navbar .nav-item .nav-link:hover{ color:#0c4c8a }
 
 .Header .navbar .nav-item .nav-link.Login{
@@ -169,7 +169,7 @@ select{cursor: pointer;outline: 0;}
 }
 
 
-.Header .navbar .nav-item .dropdown-menu{padding:0;margin:0;background-color: #fff;min-width:200px;right:0;left:auto;overflow:hidden;/* border:2px solid #0c4c8a; */border-radius:7px;/* box-shadow:0 5px 10px #ddd; */}
+.Header .navbar .nav-item .dropdown-menu{padding:0;margin:0;background-color: #fff;min-width:200px;right:0;left:auto;overflow:hidden;/* border:2px solid #0c4c8a; */border-radius:7px;box-shadow: 0 2px 4px #ddd;}
 .Header .navbar .nav-item .dropdown-menu li{/* border-bottom:1px solid #0c4c8a; */}
 .Header .navbar .nav-item .dropdown-menu li a{display:block;padding:10px 15px;color: #0c4c8a;font-size: 14px;font-weight:600;text-transform:capitalize}
 .Header .navbar .nav-item .dropdown-menu li a:hover{background-color: #0c4c8a;color: #fff;}
@@ -184,7 +184,9 @@ select{cursor: pointer;outline: 0;}
 .Header .navbar .nav-item.business_menu .dropdown-menu{
     width: 100%;
     background-color: #fff;
-    border: navajowhite;
+    border: none;
+    border-radius: 0;
+    top: 56px;
 }
 
 .Header .navbar .nav-item.business_menu .dropdown-menu ul{
@@ -203,6 +205,7 @@ select{cursor: pointer;outline: 0;}
     color: #3c3c3c;
     font-size: 13px;
     text-align: center;
+    background-color: transparent;
 }
 
 .Header .navbar .nav-item.business_menu .dropdown-menu ul li .Icon{
