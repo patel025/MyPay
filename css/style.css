@@ -142,9 +142,10 @@ select{cursor: pointer;outline: 0;}
 .Header .navbar .navbar-collapse{justify-content:space-between;padding:0 0 0 40px}
 .Header .navbar .nav-item{margin:0 0 0 10px}
 .Header .navbar .nav-item .nav-link{color:#000;font-size:14px;padding:13px 15px;font-weight:600;letter-spacing:.3px;transition:0.5s all ease-in-out}
+.Header .navbar .nav-item .nav-link:after{ content:none }
 .Header .navbar .nav-item .nav-link:hover{color:#0c4c8a}
-.Header .navbar .nav-item .nav-link.Login{border:2px solid #0d4d89;border-radius:50px;background-color:#fff;color:#0d4d89;padding:8px 20px}
-.Header .navbar .nav-item .nav-link.Touch{border:2px solid #0d4d89;border-radius:50px;background-color:#0d4d89;color:#fff;padding:8px 20px}
+.Header .navbar .nav-item .nav-link.Login{border:2px solid #0d4d89;border-radius: 5px;background-color:#fff;color:#0d4d89;padding:8px 20px}
+.Header .navbar .nav-item .nav-link.Touch{border:2px solid #0d4d89;border-radius: 5px;background-color:#0d4d89;color:#fff;padding:8px 20px}
 .Header .navbar .nav-item .nav-link.Login:hover{background-color:#0d4d89;color:#fff}
 .Header .navbar .nav-item .nav-link.Touch:hover{background-color:#fff;color:#0d4d89}
 .Header .navbar .nav-item .dropdown-menu{padding:0;margin:0;background-color:#fff;min-width:200px;right:0;left:auto;overflow:hidden;border-radius:7px;box-shadow:0 2px 4px #ddd}
@@ -315,26 +316,26 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 
 .SupportArea{padding:50px 0}
 .SupportArea .SupportHead{text-align:center;padding:0 0 50px}
-.SupportArea .SupportHead h1{font-size:50px;margin:0 0 25px 0;font-weight:700}
+.SupportArea .SupportHead h1{font-size: 42px;margin:0 0 25px 0;font-weight:700}
 .SupportArea .SupportHead form{max-width:500px;margin:auto;background-color:#f9f9f9;border:1px solid #ddd;border-radius:5px;display:flex;align-items:center;padding:0 15px}
 .SupportArea .SupportHead form .form-control{background:#fff0;border:none;outline:0;height:auto;padding:10px 0 10px 10px;font-size:14px;font-weight:500;box-shadow:none;color:#000}
 .SupportArea .SupportBody{text-align:center;border:1px solid #ddd;border-left:none;border-right:none;padding:40px 0;display:flex;justify-content:center;align-items:center;gap:20px}
-.SupportArea .SupportBody p{font-size:20px;font-weight:700;color:#000}
+.SupportArea .SupportBody p{font-size: 18px;font-weight:700;color:#000}
 .SupportArea .SupportBody a{border-radius:5px;padding:10px 30px;font-size:15px;font-weight:700;border:2px solid}
 .SupportArea .SupportBody a.Login{background-color:#0d4d89;color:#fff}
-.SupportArea .SupportBody a.Register{background-color:#ddd;color:#000;border-color:#ddd}
+.SupportArea .SupportBody a.Register{background-color: #fff;color: #0d4d89;border-color: #0d4d89;}
 .SupportArea .SupportBody a.Login:hover{background-color:#fff;color:#0d4d89}
 .SupportArea .SupportBody a.Register:hover{background-color:#0d4d89;border-color:#0d4d89;color:#fff}
 .SupportArea .SupportFooter{padding:50px 0 0}
 .SupportArea .SupportFooter h3{font-size:25px;font-weight:700;margin:0 0 20px 0;color:#000}
 .SupportArea .SupportFooter article{display:flex;gap:20px}
-.SupportArea .SupportFooter article aside{border:1px solid #ddd;padding:20px;border-radius:10px;text-align:center;width:100%}
+.SupportArea .SupportFooter article aside{padding:20px;border-radius:10px;text-align:center;width:100%;box-shadow: 0 0 10px rgb(0 0 0 / 20%);}
 .SupportArea .SupportFooter article aside h4{font-size:20px;font-weight:700;color:#000;margin:0 0 25px 0}
 .SupportArea .SupportFooter article aside .Icon{display:inline-block;max-width:60px;margin:0 0 20px 0}
 .SupportArea .SupportFooter article aside p{font-size:16px;font-weight:700;color:#000;letter-spacing:.4px}
 .SupportArea .SupportFooter article aside h6{display:flex;gap:5px}
-.SupportArea .SupportFooter article aside h6 .Faq{border-radius:5px;padding:5px 10px;font-size:14px;font-weight:700;border:2px solid #0d4d89;width:50%;color:#0d4d89;line-height:39px}
-.SupportArea .SupportFooter article aside h6 .Faq:last-child{line-height:20px;background-color:#0d4d89;color:#fff}
+.SupportArea .SupportFooter article aside h6 .Faq{border-radius:5px;padding: 5px 10px;font-size: 13px;font-weight:700;border:2px solid #0d4d89;width:50%;color:#0d4d89;line-height: 33px;}
+.SupportArea .SupportFooter article aside h6 .Faq:last-child{line-height: 16px;background-color:#0d4d89;color:#fff}
 
 
 
