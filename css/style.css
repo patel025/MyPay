@@ -506,7 +506,7 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .Header .navbar .nav-item .business_menu .business_box ul{ position: relative;}
 .Header .navbar .nav-item .business_menu .business_box ul>li{ margin: 0 0 20px 0; position: static; max-width: 350px; }
 .Header .navbar .nav-item .business_menu .business_box ul>li:last-child{ margin:0 }
-.Header .navbar .nav-item .business_menu .business_box ul>li a{ font-size: 28px; color: #5e5e5e; font-weight: 700; }
+.Header .navbar .nav-item .business_menu .business_box ul>li a{font-size: 22px;color: #5e5e5e;font-weight: 700;}
 .Header .navbar .nav-item .business_menu .business_box ul>li a:hover{ color:#000 }
 .Header .navbar .nav-item .business_menu .business_box ul>li .business_submenu{display:none;position: absolute;width: calc(100% - 350px);top: 0;left: 350px;max-height: 300px;overflow: hidden;border-radius: 10px;}
 .Header .navbar .nav-item .business_menu .business_box ul>li .business_submenu img{ width:100% }
