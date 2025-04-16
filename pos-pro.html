@@ -342,6 +342,22 @@
  -->
 
     <section>
+        <div class="StartedArea">
+            <div class="container">
+                <div class="StartedBox">
+                    <article>
+                        <h2>Get Started with <br> MyPay today! </h2>
+                        <p>MyPay's all-in-one POS systems make it easy to sell smarter, serve <br> faster, grow your business with confidence </p>
+                    </article>
+                    <aside>
+                        <a href="">Become a customer</a>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
         <div class="KitchenArea">
             <div class="container">
                 <div class="KitchenBox">
@@ -371,21 +387,6 @@
         </div>
     </section>
 
-    <section>
-        <div class="StartedArea">
-            <div class="container">
-                <div class="StartedBox">
-                    <article>
-                        <h2>Get Started with <br> MyPay today! </h2>
-                        <p>MyPay's all-in-one POS systems make it easy to sell smarter, serve <br> faster, grow your business with confidence </p>
-                    </article>
-                    <aside>
-                        <a href="">Become a customer</a>
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section>
         <div class="RetailSlide">
@@ -447,7 +448,7 @@
                         <div class="Foots"> 
                             <h3>&nbsp;</h3>
                             <a href="index.html">
-                                <img src="images/Logo.png" style="filter: brightness(0) invert(1);">
+                                <img src="images/Footer-Logo.png" style="filter: brightness(0) invert(1);">
                             </a>
                         </div>
                     </div>
@@ -559,8 +560,17 @@
                     $("body").toggleClass("open");
                 },
                 function () {
+                     $(".dropdown-menu", this).hide()
+                    // $(".dropdown-menu", this).stop(true, true).slideUp("slow");
+                     $("body").toggleClass("open");
+                }
+            );
+            $(".Languauge").hover(
+                function () {
+                    $(".dropdown-menu", this).stop(true, true).slideDown("slow");
+                },
+                function () {
                     $(".dropdown-menu", this).stop(true, true).slideUp("slow");
-                    $("body").toggleClass("open");
                 }
             );
         });

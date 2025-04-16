@@ -242,12 +242,19 @@
         </div>
     </section>
  
-
     <footer>
         <div class="container">
             <div class="Footer">
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
+                        <div class="Foots"> 
+                            <h3>&nbsp;</h3>
+                            <a href="index.html">
+                                <img src="images/Footer-Logo.png" style="filter: brightness(0) invert(1);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
                         <div class="Foots"> 
                             <h3>Business Types</h3>
                             <ul> 
@@ -257,8 +264,15 @@
                                 <li><a href="javascript:void(0);">Bar </a></li>
                                 <li><a href="javascript:void(0);">Bazar</a></li>
                                 <li><a href="javascript:void(0);">Grocery store</a></li>
-                                <li><a href="javascript:void(0);">Beauty Salon</a></li>
+                                <li><a href="javascript:void(0);">Beauty Salon</a></li> 
                                 <li><a href="javascript:void(0);">Barbershop</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="Foots"> 
+                            <h3>&nbsp;</h3>
+                            <ul>  
                                 <li><a href="javascript:void(0);">Hair Salon</a></li>
                                 <li><a href="javascript:void(0);">Nail Salon</a></li>
                                 <li><a href="javascript:void(0);">Day Spa</a></li>
@@ -270,7 +284,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
                         <div class="Foots"> 
                             <h3>Products</h3>
                             <ul> 
@@ -283,7 +297,7 @@
                             </ul>
                         </div>
                     </div> 
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
                         <div class="Foots"> 
                             <h3>Support</h3>
                             <ul>
@@ -293,7 +307,7 @@
                             </ul>
                         </div>
                     </div> 
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
                         <div class="Foots">
                             <h3>Contact us</h3>
                             <p><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>  <a href="">info@mypay.nu</a>  </p>
@@ -348,8 +362,17 @@
                     $("body").toggleClass("open");
                 },
                 function () {
+                     $(".dropdown-menu", this).hide()
+                    // $(".dropdown-menu", this).stop(true, true).slideUp("slow");
+                     $("body").toggleClass("open");
+                }
+            );
+            $(".Languauge").hover(
+                function () {
+                    $(".dropdown-menu", this).stop(true, true).slideDown("slow");
+                },
+                function () {
                     $(".dropdown-menu", this).stop(true, true).slideUp("slow");
-                    $("body").toggleClass("open");
                 }
             );
         });
