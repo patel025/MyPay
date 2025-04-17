@@ -443,6 +443,7 @@
     <footer>
         <div class="container">
             <div class="Footer">
+                <h1>Make it Simple.</h1>
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="Foots"> 
@@ -552,29 +553,29 @@
         }
     </script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".dropdown").hover(
-                function () {
-                    $(".dropdown-menu", this).stop(true, true).slideDown("slow");
-                    $("body").toggleClass("open");
-                },
-                function () {
-                     $(".dropdown-menu", this).hide()
-                    // $(".dropdown-menu", this).stop(true, true).slideUp("slow");
-                     $("body").toggleClass("open");
-                }
-            );
-            $(".Languauge").hover(
-                function () {
-                    $(".dropdown-menu", this).stop(true, true).slideDown("slow");
-                },
-                function () {
-                    $(".dropdown-menu", this).stop(true, true).slideUp("slow");
-                }
-            );
-        });
-    </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".dropdown").hover(
+            function () {
+                $(".dropdown-menu", this).stop(true, true).slideDown(400);
+                $("body").toggleClass("open");
+            },
+            function () {
+                 $(".dropdown-menu", this).hide()
+                // $(".dropdown-menu", this).stop(true, true).slideUp(400);
+                 $("body").toggleClass("open");
+            }
+        );
+        $(".Languauge").hover(
+            function () {
+                $(".dropdown-menu", this).stop(true, true).slideDown(400);
+            },
+            function () {
+                $(".dropdown-menu", this).stop(true, true).slideUp(400);
+            }
+        );
+    });
+</script>
     
     <script>
         $(document).ready(function () {
