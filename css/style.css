@@ -389,7 +389,7 @@ select{cursor: pointer;outline: 0;}
 
 footer{background-color:#0c4c8a}
 footer .Footer{padding:30px 0}
-footer .Footer h1{margin: 0 0 40px 0;color: #fff;font-size: 60px;}
+footer .Footer h1{margin: 0 0 40px 0;color: #fff;font-size: 70px;text-transform: uppercase;font-weight: 900;}
 footer .Footer .Foots h3{color:#fff;font-size:20px;font-weight:700;margin:0 0 15px 0}
 footer .Footer .Foots img{ width:125px }
 footer .Footer .Foots ul li{position:relative;padding:0 0 0 0;margin:0 0 10px 0}
@@ -494,11 +494,23 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .FasterArea .FasterBox p{font-size:15px;line-height:22px;font-weight:500;color:#6e6e6e}
 .DisplayArea{padding:50px 0}
 .DisplayArea h2{color:#000;font-size:40px;font-weight:800;text-transform:capitalize;text-align:center}
-.DisplayArea .DisplayBox{background-color:#f2f2f2;padding:20px;border-radius:10px;margin:40px 0 0 0}
-.DisplayArea .DisplayBox figcaption h3{color:#000;font-size:24px;margin:0 0 10px 0;font-weight:700;text-transform:capitalize}
-.DisplayArea .DisplayBox figcaption p{font-size:15px;color:#535252;font-weight:500;line-height:22px;margin:0 0 15px 0}
-.DisplayArea .DisplayBox figcaption h6{margin:0 0 15px 0;font-weight:700;font-size:14px;color:#484747}
-.DisplayArea .DisplayBox figcaption a{border-radius:50px;background-color:#000;color:#fff;padding:7px 40px;display:inline-block;font-weight:700;font-size:16px}
+.DisplayArea .DisplayHead h2{}
+.DisplayArea .DisplayHead p{text-align: center;margin: 15px 0 0 0;font-size: 15px;color: #535252;font-weight: 500;line-height: 23px;}
+.DisplayArea .DisplayBody .owl-nav{position:absolute;top:-80px;right:0}
+.DisplayArea .DisplayBody .owl-nav .owl-prev,
+.DisplayArea .DisplayBody .owl-nav .owl-next{width:35px;height:35px;background-color:#fff;border-radius:50%;margin:0 0 0 10px;font-size:18px;font-weight:700;border:2px solid #0c4c8a;color:#0c4c8a}
+.DisplayArea .DisplayBody .owl-nav .owl-prev i,
+.DisplayArea .DisplayBody .owl-nav .owl-next i{font-weight:700}
+.DisplayArea .DisplayBody .owl-nav .owl-prev:hover,
+.DisplayArea .DisplayBody .owl-nav .owl-next:hover{background-color:#0c4c8a;color:#fff}
+
+.DisplayBox{background-color:#f2f2f2;padding:20px;border-radius:10px;margin:40px 0 0 0}
+.DisplayBox figcaption h3{color:#000;font-size:24px;margin:0 0 10px 0;font-weight:700;text-transform:capitalize}
+.DisplayBox figcaption p{font-size:15px;color:#535252;font-weight:500;line-height:22px;margin:0 0 15px 0}
+.DisplayBox figcaption h6{margin:0 0 15px 0;font-weight:700;font-size:14px;color:#484747}
+.DisplayBox figcaption a{border-radius:50px;background-color:#000;color:#fff;padding:7px 40px;display:inline-block;font-weight:700;font-size:16px}
+
+
 .ProcessingArea{text-align:center;padding:50px 0;background:#f9f9f9}
 .ProcessingArea h3{color:#000;font-size:28px;margin:0 0 15px 0;font-weight:800}
 .ProcessingArea p{font-size:15px;color:#535252;font-weight:500;line-height:22px}

@@ -440,6 +440,73 @@
         </div>
     </section> 
 
+    <section>
+        <div class="DisplayArea">
+            <div class="container">
+                <div class="DisplayHead">
+                    <h2>Other hardware options</h2>
+                    <p>choose your accessories, hardware and setup. Build POS system that fits your <br> workflow not the other way aroun </p>
+                </div>
+                <div class="DisplayBody">
+                    <div class="owl-carousel owl-theme" id="BranchSlide">
+                        <div class="item">
+                            <div class="DisplayBox">
+                                <figure>
+                                    <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale">
+                                </figure>
+                                <figcaption>
+                                    <h3>TouchID</h3>
+                                    <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
+                                    <h6>$799 or $39/mo over 24 months¹</h6> 
+                                    <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="DisplayBox">
+                                <figure>
+                                    <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale">
+                                </figure>
+                                <figcaption>
+                                    <h3>Kitchen Display</h3>
+                                    <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
+                                    <h6>$799 or $39/mo over 24 months¹</h6> 
+                                    <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="DisplayBox">
+                                <figure>
+                                    <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale">
+                                </figure>
+                                <figcaption>
+                                    <h3>Kitchen Printer</h3>
+                                    <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
+                                    <h6>$799 or $39/mo over 24 months¹</h6> 
+                                    <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="DisplayBox">
+                                <figure>
+                                    <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale">
+                                </figure>
+                                <figcaption>
+                                    <h3>Barcode scanner</h3>
+                                    <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
+                                    <h6>$799 or $39/mo over 24 months¹</h6> 
+                                    <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <div class="Footer">
@@ -551,6 +618,31 @@
                 select.dispatchEvent(new Event("change"));
             }
         }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#BranchSlide").owlCarousel({
+                loop: true,
+                margin: 15,
+                dots: false,
+                autoplay: true,
+                 smartSpeed: 3000,
+                // slideTransition: 'linear',
+                // autoplaySpeed: 8000,
+                // smartSpeed: 6000,
+                // autoplaySpeed: 3000,
+                // smartSpeed: 8000,
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                loop: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 },
+                },
+            });
+        });
     </script>
 
 <script type="text/javascript">
