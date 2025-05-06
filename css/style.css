@@ -313,7 +313,7 @@ select{cursor: pointer;outline: 0;}
 .PartnerSlideArea .PartnerSlideBox{background-color:#fff;padding:15px;border-radius:7px;min-height:120px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 6px #ddd}
 .PartnerSlideArea .PartnerSlideBox img{max-height:80px;width:auto}
 */
-.TailoreArea{padding: 30px 0 50px 0;}
+/*.TailoreArea{padding: 30px 0 50px 0;}
 .TailoreArea .TailoreBox{position:relative}
 .TailoreArea .TailoreBox figure{border-radius:10px;overflow:hidden;margin:0;background-color:#000}
 .TailoreArea .TailoreBox figure img{opacity:.8}
@@ -337,12 +337,12 @@ select{cursor: pointer;outline: 0;}
 .SystemArea .SystemRight aside h3{color:#000;font-size:30px;margin:0 0 10px 0;font-weight:800;text-transform:capitalize}
 .SystemArea .SystemRight aside p{font-size:14px;color:#0c4c8a;font-weight:500;line-height:22px}
 
-.BranchArea{padding:50px 0;/* background-color:#f9f9f9; */overflow: hidden;}
+.BranchArea{padding:50px 0; overflow: hidden;}
 .BranchArea .BranchHead{margin:0 0 30px 0}
 .BranchArea .BranchHead h3{color:#000;font-size:40px;margin:0 0 10px 0;font-weight:800}
 .BranchArea .BranchHead p{font-size:14px;color:#535252;font-weight:500;line-height:22px}
-/*.BranchArea .BranchBody .item{padding:10px}*/
-.BranchArea .BranchBody .BranchBox{border-radius:10px;overflow:hidden;/* border:5px solid #fff; *//* box-shadow:0 0 10px #d1cdcd; */}
+.BranchArea .BranchBody .item{padding:10px}
+.BranchArea .BranchBody .BranchBox{border-radius:10px;overflow:hidden;}
 .BranchArea .BranchBody .owl-nav{position:absolute;top:-80px;right:0}
 .BranchArea .BranchBody .owl-nav .owl-prev,
 .BranchArea .BranchBody .owl-nav .owl-next{width:35px;height:35px;background-color:#fff;border-radius:50%;margin:0 0 0 10px;font-size:18px;font-weight:700;border:2px solid #0c4c8a;color:#0c4c8a}
@@ -363,9 +363,183 @@ select{cursor: pointer;outline: 0;}
 .SlideArea .SlideBox .SlideRight{width:60%;height:auto}
 .SlideArea .SlideBox .SlideRight figure{border-radius:10px;overflow:hidden;position:relative;margin:0}
 .SlideArea .SlideBox .SlideRight figure img{width:100%}
+*/
+
+.PerfectedArea{
+
+background-image: url('https://images.ctfassets.net/2d5q1td6cyxq/5cEt80x5II28cmmq4sMYwc/2b92eeb7b7055317623c4d088a942807/PD05162_-_USEN_Register_Bran_Mount_Kit.png?w=1016&h=467&fm=avif&q=85&fit=scale');
+
+background-color: #efefef;
+
+background-repeat: no-repeat;
+
+background-position: 100% 50%;
+
+padding: 70px 0;
+}
+.PerfectedArea .PerfectedLeft{}
+.PerfectedArea .PerfectedLeft h3{
+    color: #000;
+    font-size: 60px;
+    margin: 0 0 10px 0;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.PerfectedArea .PerfectedLeft p{
+    font-size: 14px;
+    color: #535252;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0 0 20px 0;
+}
+.PerfectedArea .PerfectedLeft button{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin: 0 10px 0 0;
+}
+.PerfectedArea .PerfectedLeft button.Offer{
+    border: 2px solid #0d4d89;
+    background-color: #0d4d89;
+    color: #fff;
+}
+.PerfectedArea .PerfectedLeft button.Login{
+    border: 2px solid #0d4d89;
+    background-color: #fff;
+    color: #0d4d89;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ChooseArea{
+    padding: 50px 0;
+    background-color: #f6f5f5;
+}
+
+.ChooseArea h2{
+    color: #000;
+    font-size: 36px;
+    margin: 0 0 40px 0;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.ChooseArea .ChooseBox{
+    text-align: center;
+}
+.ChooseArea .ChooseBox span{
+    display: inline-block;
+    max-width: 60px;
+}
+.ChooseArea .ChooseBox h4{
+    color: #000;
+    font-size: 20px;
+    margin: 15px 0 5px 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.ChooseArea .ChooseBox p{
+    font-size: 14px;
+    color: #535252;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.TailoredArea{
+    display: flex;
+    align-items: center;
+    background-color: #f6f5f5;
+}
+.TailoredArea .TailoredLeft{
+    background-color: #f6f5f5;
+    width: 50%;
+}
+
+.TailoredArea .TailoredLeft aside{
+    width: 70%;
+    margin: 0 0 0 auto;
+    padding: 0 100px 0 0;
+}
+
+.TailoredArea .TailoredLeft aside h2{
+    color: #000;
+    font-size: 50px;
+    margin: 0 0 30px 0;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.TailoredArea .TailoredLeft aside ul{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.TailoredArea .TailoredLeft aside ul li{
+    color: #000;
+    font-size: 24px;
+    text-transform: capitalize;
+    border: 2px solid #727070;
+    width: 48%;
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+.TailoredArea .TailoredRight{
+    width: 50%;
+}
+.TailoredArea .TailoredRight img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .TabletArea{padding:50px 0}
-.TabletArea .TabletBox{/* background-color:#f6f5f5; *//* padding:50px; *//* border-radius:20px; *//* display:flex; *//* align-items:center; *//* gap:35px; */text-align: center;}
+.TabletArea .TabletBox{text-align: center;}
 .TabletArea .TabletBox .TabletLeft{ margin: 0 0 30px 0;}
 .TabletArea .TabletBox .TabletLeft h3{color:#000;font-size:40px;margin:0 0 20px 0;font-weight:800;text-transform:capitalize}
 .TabletArea .TabletBox .TabletLeft p{font-size:14px;color:#535252;font-weight:500;line-height:22px}
@@ -708,7 +882,7 @@ position: absolute;
 }
 .RetailSlide .RetailBox figure img{}
 
-
+/* 
 .StartedArea{
     background: #f4f4f4;
     padding: 50px 0;
@@ -750,9 +924,47 @@ position: absolute;
 .StartedArea .StartedBox aside a:hover{
     background: #0d4d89;
     color: #fff;
+} */
+
+.StartedArea{
+}
+.StartedArea .StartedBox{text-align: center;}
+.StartedArea .StartedBox article{
+    background: #f4f4f4;
+    padding: 30px 0;
+}
+.StartedArea .StartedBox article h2{
+    font-size: 65px;
+    font-weight: 900;
+    margin: 0 0 10px 0;
+    color: #000;
 }
 
-
+.StartedArea .StartedBox article h2 span{
+    display: inline-block;
+    max-width: 210px;
+}
+.StartedArea .StartedBox article p{
+    font-size: 18px;
+    line-height: 26px;
+}
+.StartedArea .StartedBox aside{
+    background-color: #fff;
+    padding: 25px 0 0;
+}
+.StartedArea .StartedBox aside a{
+    border: 2px solid #0d4d89;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #0d4d89;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+.StartedArea .StartedBox aside a:hover{
+    background: #0d4d89;
+    color: #fff;
+}
 
 
 
