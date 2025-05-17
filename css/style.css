@@ -259,7 +259,8 @@ select{cursor: pointer;outline: 0;}
 .Header .navbar .nav-item.Languauge .dropdown-menu li a:hover{background:#0d4d89;color:#fff}
 .Header .navbar .nav-item .dropdown-menu{width:100%;margin:0;padding:40px 0 30px 0;border:none}
 /*.Header .navbar .nav-item:hover .dropdown-menu{display:block}*/
-.Header .navbar .nav-item .business_menu .business_box{width:100%;min-height:300px}
+
+/*.Header .navbar .nav-item .business_menu .business_box{width:100%;min-height:300px}
 .Header .navbar .nav-item .business_menu .business_box ul{position:relative}
 .Header .navbar .nav-item .business_menu .business_box ul>li{margin:0 0 20px 0;position:static;max-width:350px}
 .Header .navbar .nav-item .business_menu .business_box ul>li:last-child{margin:0}
@@ -267,7 +268,24 @@ select{cursor: pointer;outline: 0;}
 .Header .navbar .nav-item .business_menu .business_box ul>li a:hover{color:#000}
 .Header .navbar .nav-item .business_menu .business_box ul>li .business_submenu{display:none;position:absolute;width:calc(100% - 350px);top:0;left:350px;max-height:300px;overflow:hidden;border-radius:10px}
 .Header .navbar .nav-item .business_menu .business_box ul>li .business_submenu img{width:100%}
-.Header .navbar .nav-item .business_menu .business_box ul>li:hover .business_submenu{display:block}
+*/
+
+
+.Header .navbar .nav-item .business_menu .business_box{width:100%;min-height:300px;position: relative;}
+.Header .navbar .nav-item .business_menu .business_box ul{position:relative}
+.Header .navbar .nav-item .business_menu .business_box ul>li{margin:0 0 20px 0;position:static;max-width:350px}
+.Header .navbar .nav-item .business_menu .business_box ul>li:last-child{margin:0}
+.Header .navbar .nav-item .business_menu .business_box ul>li a{font-size:22px;color:#5e5e5e;font-weight:700}
+.Header .navbar .nav-item .business_menu .business_box ul>li a:hover{color:#000}
+.Header .navbar .nav-item .business_menu .business_box .business_submenu{position:absolute;width:calc(100% - 350px);top:0;left:350px;max-height:300px;overflow:hidden;border-radius:10px}
+.Header .navbar .nav-item .business_menu .business_box .business_submenu img{width:100%; display: none;}
+
+.Header .navbar .nav-item .business_menu .business_box .business_submenu[data-id="1"] img:nth-child(1){ display:block;  }
+.Header .navbar .nav-item .business_menu .business_box .business_submenu[data-id="2"] img:nth-child(2){ display:block;  }
+.Header .navbar .nav-item .business_menu .business_box .business_submenu[data-id="3"] img:nth-child(3){ display:block;  }
+.Header .navbar .nav-item .business_menu .business_box .business_submenu[data-id="4"] img:nth-child(4){ display:block;  }
+
+
 .Header .navbar .nav-item .product_menu .product_box{width:100%;min-height:300px}
 .Header .navbar .nav-item .product_menu .product_box ul{position:relative}
 .Header .navbar .nav-item .product_menu .product_box ul>li{margin:0 0 20px 0;position:static}
@@ -422,7 +440,7 @@ padding: 70px 0;
 
 
 
-.ChooseArea{
+/*.ChooseArea{
     padding: 50px 0;
     background-color: #f6f5f5;
 }
@@ -454,7 +472,70 @@ padding: 70px 0;
     color: #535252;
     font-weight: 500;
     line-height: 22px;
+}*/
+
+.ChooseArea{
+    padding: 60px 0;
+    background-image: linear-gradient(180deg, #e6ebf0, #dce6f5,#e1ebf5,#f0f0f5, #f0f0f5);
+    /* background: linear-gradient(183deg, black, transparent); */
 }
+.ChooseArea .ChooseHead{
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+.ChooseArea .ChooseHead p{
+    font-size: 16px;
+    color: #535252;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0 0 10px 0;
+    letter-spacing: 0.5px;
+}
+.ChooseArea .ChooseHead h2{
+    color: #0d4d89;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.ChooseArea .ChooseBox{
+    text-align: center;
+}
+.ChooseArea .ChooseBox h3{
+    color: #000;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+}
+.ChooseArea .ChooseBox p{
+    font-size: 18px;
+    color: #535252;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0 0 20px 0;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .TailoredArea{
     display: flex;
@@ -546,7 +627,7 @@ padding: 70px 0;
 .TabletArea .TabletBox .TabletRight{ width: 80%; margin: auto;}
 .TabletArea .TabletBox .TabletRight img{width:100%}
 
-.PaymentCardArea{padding:50px 0;background-color:#f6f5f5}
+.PaymentCardArea{padding: 65px 0;background-color:#f6f5f5}
 .PaymentCardArea .PaymentCardHead{text-align:center;margin:0 0 50px 0}
 .PaymentCardArea .PaymentCardHead h3{color:#1359a1;font-size:40px;margin:0 0 20px 0;font-weight:800;text-transform:capitalize}
 .PaymentCardArea .PaymentCardHead p{font-size:16px;color:#535252;font-weight:500;line-height:28px}
@@ -662,7 +743,7 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .SquareArea .SquareLeft p{font-size:16px;line-height:26px;font-weight:500;color:#444}
 .SquareArea .SquareRight{text-align:right}
 .SquareArea .SquareRight img{width:90%}
-.FasterArea{padding:50px 0}
+.FasterArea{padding: 65px 0;}
 .FasterArea .FasterBox .Icon{display:inline-block;max-width:80px}
 .FasterArea .FasterBox h3{font-size:25px;font-weight:700;margin:20px 0 10px 0;color:#000}
 .FasterArea .FasterBox p{font-size:15px;line-height:22px;font-weight:500;color:#6e6e6e}
@@ -698,7 +779,7 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .CoreArea .CoreBox article h1{font-size:80px;font-weight:800;line-height: 70px;}
 .CoreArea .CoreBox article p{font-size:21px;line-height:34px;font-weight:500}
 
-.CoreProductArea{padding:50px 0;background-color: #f4f4f4;}
+.CoreProductArea{padding:50px 0;background-color: #f6f5f5;}
 .CoreProductArea .CoreProductHead{margin: 0 0 40px 0;text-align: center;}
 .CoreProductArea .CoreProductHead h3{margin: 0 0 15px 0;font-size: 60px;font-weight: 900;color: #000;}
 .CoreProductArea .CoreProductHead p{margin: 0;font-size: 16px;color: #535252;font-weight: 500;line-height: 26px;}
@@ -765,7 +846,7 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .HighlightsArea .HighlightsBody [data-theme="blurpel"]{ background-color:#dbe4fe }
 .HighlightsArea .HighlightsBody [data-theme="pink"]{ background-color:#fedeec }*/
 
-.CustomArea{text-align: center;padding: 0 0 50px 0;}
+.CustomArea{text-align: center;padding: 0 0 60px 0;}
 .CustomArea h3{font-size: 40px;font-weight: 800;margin: 0 0 12px 0;color: #000;}
 .CustomArea p{font-size: 16px;color: #535252;font-weight: 500;line-height: 26px;margin: 0 0 20px 0;}
 .CustomArea a{font-size: 16px;color: #0c4c8a;font-weight: 500;line-height: 26px;}
@@ -971,7 +1052,7 @@ position: absolute;
 }
 
 .PrinterArea{
-    padding: 50px 0;
+    padding: 70px 0;
 }
 .PrinterArea .PrinterBoxHead{
     text-align: center;
@@ -989,7 +1070,9 @@ position: absolute;
     color: #000;
 }
 .PrinterArea .PrinterBoxBody{}
-.PrinterArea .PrinterBoxBody .PrinterBox{}
+.PrinterArea .PrinterBoxBody .PrinterBox{
+    text-align: center;
+}
 .PrinterArea .PrinterBoxBody .PrinterBox h6{
     font-size: 20px;
     color: #959090;
@@ -1013,6 +1096,64 @@ position: absolute;
     background-color: #f6f5f5;
 }
 
+
+
+
+.SolutionsArea{padding: 0 0 30px 0;}
+
+.SolutionsArea .SolutionsHead{
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 0px 3px 1px #ddd;
+/*    position: sticky;
+    top: 0;*/
+    z-index: 9;
+}
+.SolutionsArea .SolutionsHead p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.SolutionsArea .SolutionsBody{
+    padding: 65px 0;
+}
+.SolutionsArea .SolutionsBody h3{
+    color: #000;
+    font-size: 60px;
+    margin: 0 0 30px 0;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.SolutionsArea .SolutionsBody p{
+    font-size: 16px;
+    color: #535252;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0 0 10px 0;
+}
+.SolutionsArea .SolutionsBody button{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    margin: 0 10px 0 0;
+}
+.SolutionsArea .SolutionsBody button.Offer{
+    border: 2px solid #0d4d89;
+    background-color: #0d4d89;
+    color: #fff;
+}
+.SolutionsArea .SolutionsBody button.Login{
+    border: 2px solid #0d4d89;
+    background-color: #fff;
+    color: #0d4d89;
+}
+
+.SolutionsArea .SolutionsFooter{ display:flex; }
+.SolutionsArea .SolutionsFooter article{ width:100% }
+.SolutionsArea .SolutionsFooter article img{ width:100% }
 
 
 

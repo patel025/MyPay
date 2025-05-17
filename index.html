@@ -118,30 +118,25 @@
                                         <div class="business_box">
                                             <ul>
                                                 <li class="business_dropdown">
-                                                    <a href="javascript:void(0);">Food & Beverage</a>
-                                                    <div class="business_submenu">
-                                                        <img src="https://cdn.pixabay.com/photo/2017/01/31/09/30/raspberries-2023404_640.jpg" />
-                                                    </div>
+                                                    <a href="business-beverage.html" data-id="1">Food & Beverage</a>
+                                                    
                                                 </li>
                                                 <li class="business_dropdown">
-                                                    <a href="javascript:void(0);">Retail</a>
-                                                    <div class="business_submenu">
-                                                        <img src="https://cdn.pixabay.com/photo/2017/04/06/22/48/store-2209526_640.jpg" />
-                                                    </div>
+                                                    <a href="business-retail.html" data-id="2">Retail</a>
                                                 </li>
                                                 <li class="business_dropdown">
-                                                    <a href="javascript:void(0);">Services</a>
-                                                    <div class="business_submenu">
-                                                        <img src="https://cdn.pixabay.com/photo/2016/04/02/17/58/service-1303313_640.jpg" />
-                                                    </div>
+                                                    <a href="business-services.html" data-id="3">Services</a>
                                                 </li>
                                                 <li class="business_dropdown">
-                                                    <a href="javascript:void(0);">Ecommerce</a>
-                                                    <div class="business_submenu">
-                                                        <img src="https://cdn.pixabay.com/photo/2017/03/01/10/03/online-sales-2108028_640.jpg" />
-                                                    </div>
+                                                    <a href="business-ecommerce.html" data-id="4">Ecommerce</a>
                                                 </li>
                                             </ul>
+                                            <div class="business_submenu">
+                                                <img src="https://cdn.pixabay.com/photo/2017/01/31/09/30/raspberries-2023404_640.jpg" />
+                                                <img src="https://cdn.pixabay.com/photo/2017/04/06/22/48/store-2209526_640.jpg" />
+                                                <img src="https://cdn.pixabay.com/photo/2016/04/02/17/58/service-1303313_640.jpg" />
+                                                <img src="https://cdn.pixabay.com/photo/2017/03/01/10/03/online-sales-2108028_640.jpg" />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -201,7 +196,7 @@
         </div>
     </section>
 
-    <section>
+   <!--  <section>
         <div class="ChooseArea">
             <div class="container">
                 <h2>Why Choose MyPay</h2>
@@ -230,7 +225,40 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>  -->
+
+    <section>
+        <div class="ChooseArea">
+            <div class="container">
+                <div class="ChooseHead">
+                    <p>Why Choose MyPay</p>
+                    <h2>Everything we build, we build for your</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="ChooseBox">
+                            <p>Step 1</p>
+                            <h3>Personal <br> Meeting</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="ChooseBox">
+                            <p>Step 2</p>
+                            <h3>Tailor your <br> solution</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="ChooseBox">
+                            <p>Step 3</p>
+                            <h3>In-shop <br> set up</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <section>
         <div class="TailoredArea">
@@ -621,6 +649,16 @@
                     $(".dropdown-menu", this).stop(true, true).slideUp(400);
                 }
             );
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.business_dropdown a').hover(function(){
+                var dataId = $(this).data('id');
+                console.log("dataId",dataId)
+                $('.business_submenu').attr('data-id', dataId);
+            });
         });
     </script>
 
