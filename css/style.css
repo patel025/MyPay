@@ -248,7 +248,7 @@ select{cursor: pointer;outline: 0;}
 .Header .navbar .nav-item .nav-link{color: #3a3a3a;font-size: 15px;padding: 20px 8px;font-weight:500;letter-spacing:.3px;transition: 0.1s all ease-in-out;}
 .Header .navbar .nav-item .nav-link:after{content:none}
 .Header .navbar .nav-item .nav-link:hover{color: #000000;}
-.Header .navbar .nav-item .nav-link.Login{border:2px solid #0d4d89;border-radius:5px;background-color:#fff;color:#0d4d89;padding:8px 20px;margin:10px 0}
+.Header .navbar .nav-item .nav-link.Login{border: 2px solid #0d4d89;border-radius:5px;background-color:#fff;color:#0d4d89;padding:8px 20px;margin:10px 0}
 .Header .navbar .nav-item .nav-link.Touch{border:2px solid #0d4d89;border-radius:5px;background-color:#0d4d89;color:#fff;padding:8px 20px;margin:10px 0}
 .Header .navbar .nav-item .nav-link.Login:hover{background-color: #e4eefd;color: #0d4d89;}
 .Header .navbar .nav-item .nav-link.Touch:hover{background-color:#0e3860;color:#fff;border-color:#0e3860}
@@ -476,8 +476,7 @@ padding: 70px 0;
 
 .ChooseArea{
     padding: 60px 0;
-    background-image: linear-gradient(180deg, #e6ebf0, #dce6f5,#e1ebf5,#f0f0f5, #f0f0f5);
-    /* background: linear-gradient(183deg, black, transparent); */
+    background-image: linear-gradient(180deg, #e6ebf0, #e6ebf0, #dce6f5,#e1ebf5,#f0f0f5, #f0f0f5);
 }
 .ChooseArea .ChooseHead{
     text-align: center;
@@ -704,7 +703,8 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .TouchArea .TouchBody .TouchRight .form-group{margin:0 0 20px 0}
 .TouchArea .TouchBody .TouchRight .form-group .form-control{height:auto;padding:12px 12px;border:1px solid #b3b3b3;border-radius:5px;box-shadow:none;font-weight:500;font-size:14px}
 .TouchArea .TouchBody .TouchRight .form-group p{font-size:13px;margin:10px 0 0 0;letter-spacing:.4px;line-height:14px}
-.TouchArea .TouchBody .TouchRight button{width:100%;background-color:#0d4d89;border:none;padding:10px 0;color:#fff;font-size:16px;letter-spacing:.5px;font-weight:500;border-radius:7px;margin:0 0 20px 0}
+.TouchArea .TouchBody .TouchRight button{width:100%;border: 2px solid #0d4d89;padding:10px 0;color:#fff;font-size:16px;letter-spacing:.5px;font-weight:500;border-radius:7px;margin:0 0 20px 0;background: transparent;color: #0d4d89;}
+.TouchArea .TouchBody .TouchRight button:hover{ background-color:#e4eefd }
 .TouchArea .TouchBody .TouchRight p{font-size:14px;margin:-5px 0 0 0;line-height:22px}
 
 
@@ -743,10 +743,13 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .SquareArea .SquareLeft p{font-size:16px;line-height:26px;font-weight:500;color:#444}
 .SquareArea .SquareRight{text-align:right}
 .SquareArea .SquareRight img{width:90%}
+
 .FasterArea{padding: 65px 0;}
+.FasterArea .FasterBox { text-align:center; }
 .FasterArea .FasterBox .Icon{display:inline-block;max-width:80px}
 .FasterArea .FasterBox h3{font-size:25px;font-weight:700;margin:20px 0 10px 0;color:#000}
 .FasterArea .FasterBox p{font-size:15px;line-height:22px;font-weight:500;color:#6e6e6e}
+
 .DisplayArea{padding:50px 0}
 .DisplayArea h2{color:#000;font-size:40px;font-weight:800;text-transform:capitalize;text-align:center}
 .DisplayArea .DisplayHead h2{}
