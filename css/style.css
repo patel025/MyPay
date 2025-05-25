@@ -1089,6 +1089,14 @@ position: absolute;
     color: #0d4d89;
 }
 
+.SolutionsArea .SolutionsBody button.Offer:hover{
+    background-color: #0e3860;
+    border-color: #0e3860;
+}
+.SolutionsArea .SolutionsBody button.Login:hover{
+    background-color: #e4eefd;
+}
+
 .SolutionsArea .SolutionsFooter{ display:flex; }
 .SolutionsArea .SolutionsFooter article{ width:100% }
 .SolutionsArea .SolutionsFooter article img{ width:100% }
