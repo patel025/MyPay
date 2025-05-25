@@ -445,7 +445,7 @@ select{cursor: pointer;outline: 0;}
 
 .ChooseArea{
     padding: 60px 0;
-    background-image: linear-gradient(180deg, #efefef, #e6ebf0, #e6ebf0, #dce6f5, #e1ebf5, #f0f0f5, #F0F0F7);
+    background-image: linear-gradient(180deg, #efefef, #e6ebf0, #e6ebf0, #dce6f5, #e1ebf5,  #e1ebf5,  #e1ebf5, #f0f0f5);
 }
 .ChooseArea .ChooseHead{
     text-align: center;
