@@ -304,9 +304,8 @@ select{cursor: pointer;outline: 0;}
 #google_translate_element{height: 42px;overflow: hidden;padding: 1px 0;}
 #google_translate_element .goog-te-combo{margin: 0;border: none;padding: 10px 10px;border-radius: 7px;display: block;width: 100%;font-family: 'Mulish';font-weight: 700;}
 .TranslateBox{ display: flex; align-items: center;  border-radius: 5px; padding: 0 10px;}
-.TranslateBox i{}*/
+.TranslateBox i{}
 
-/*
 .PartnerSlideArea{padding:50px 0 50px 0;background:#f9f9f9}
 .PartnerSlideArea .PartnerSlideHead{text-align:center;margin:0 0 40px 0}
 .PartnerSlideArea .PartnerSlideHead h3{color:#0c4c8a;font-weight:800;display:block;font-size:30px;margin:0 0 10px 0}
@@ -314,8 +313,8 @@ select{cursor: pointer;outline: 0;}
 .PartnerSlideArea .item{padding:10px}
 .PartnerSlideArea .PartnerSlideBox{background-color:#fff;padding:15px;border-radius:7px;min-height:120px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 6px #ddd}
 .PartnerSlideArea .PartnerSlideBox img{max-height:80px;width:auto}
-*/
-/*.TailoreArea{padding: 30px 0 50px 0;}
+
+.TailoreArea{padding: 30px 0 50px 0;}
 .TailoreArea .TailoreBox{position:relative}
 .TailoreArea .TailoreBox figure{border-radius:10px;overflow:hidden;margin:0;background-color:#000}
 .TailoreArea .TailoreBox figure img{opacity:.8}
@@ -365,16 +364,8 @@ select{cursor: pointer;outline: 0;}
 .SlideArea .SlideBox .SlideRight{width:60%;height:auto}
 .SlideArea .SlideBox .SlideRight figure{border-radius:10px;overflow:hidden;position:relative;margin:0}
 .SlideArea .SlideBox .SlideRight figure img{width:100%}
-*/
 
-.PerfectedArea{
-    background-image: url('https://images.ctfassets.net/2d5q1td6cyxq/5cEt80x5II28cmmq4sMYwc/2b92eeb7b7055317623c4d088a942807/PD05162_-_USEN_Register_Bran_Mount_Kit.png?w=1016&h=467&fm=avif&q=85&fit=scale');
-    background-color: #efefef;
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    padding: 70px 0;
-}
-
+.PerfectedArea{background-image: url('https://images.ctfassets.net/2d5q1td6cyxq/5cEt80x5II28cmmq4sMYwc/2b92eeb7b7055317623c4d088a942807/PD05162_-_USEN_Register_Bran_Mount_Kit.png?w=1016&h=467&fm=avif&q=85&fit=scale');background-color: #efefef;background-repeat: no-repeat;background-position: 100% 50%;padding: 70px 0;}
 .PerfectedArea .PerfectedLeft h3{color:#000;font-size:60px;margin:0 0 10px 0;font-weight:800;text-transform:capitalize}
 .PerfectedArea .PerfectedLeft p{font-size:14px;color:#535252;font-weight:500;line-height:22px;margin:0 0 20px 0}
 .PerfectedArea .PerfectedLeft button{font-size:15px;font-weight:500;letter-spacing:.3px;padding:8px 20px;border-radius:6px;margin:0 10px 0 0}
@@ -391,9 +382,95 @@ select{cursor: pointer;outline: 0;}
 .ChooseArea .ChooseBox h3{color:#000;font-size:40px;font-weight:800;line-height:50px}
 .ChooseArea .ChooseBox p{font-size:18px;color:#535252;font-weight:500;line-height:22px;margin:0 0 20px 0;letter-spacing:.5px}
 
-.TailoredArea{display:flex;align-items:center;background-color:#f0f0f7}
+*/
+
+
+
+
+.BusinessArea{
+    background: #fcfbf8;
+    position: relative;
+    padding: 0;
+    background-image: linear-gradient(45deg, #fffefa, #efebe2);
+}
+
+
+.BusinessArea .BusinessHead{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+}
+.BusinessArea .BusinessHead h3{color:#000;font-size:60px;margin:0 0 10px 0;font-weight:800;text-transform:capitalize}
+.BusinessArea .BusinessHead p{font-size: 25px;color:#535252;font-weight:500;line-height:22px;}
+
+
+.BusinessArea .BusinessBody{
+    text-align: center;
+}
+.BusinessArea .BusinessBody img{}
+
+
+.BusinessArea .BusinessFooter{
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+.BusinessArea .BusinessFooter button{font-size:15px;font-weight:500;letter-spacing:.3px;padding:8px 20px;border-radius:6px;margin:0 10px 0 0}
+.BusinessArea .BusinessFooter button.Offer{border:2px solid #0d4d89;background-color:#0d4d89;color:#fff}
+.BusinessArea .BusinessFooter button.Login{border:2px solid #0d4d89;background-color:#fff;color:#0d4d89}
+.BusinessArea .BusinessFooter button.Offer:hover{background-color:#0e3860;border-color:#0e3860}
+.BusinessArea .BusinessFooter button.Login:hover{background-color:#e4eefd}
+
+
+
+
+.ChooseArea{padding:60px 0;text-align: center;}
+.ChooseArea .ChooseHead{
+    margin: 0 0 60px 0;
+}
+.ChooseArea .ChooseHead p{font-size: 18px;color: #656565;font-weight: 500;line-height:22px;margin:0 0 10px 0;letter-spacing:.5px}
+.ChooseArea .ChooseHead h2{color: #000000;font-size: 45px;font-weight:800;text-transform:capitalize;margin: 0 0 36px 0;}
+.ChooseArea .ChooseHead video{
+    max-width: 800px;
+    margin: auto;
+    display: block;
+}
+
+.ChooseArea .ChooseBody{}
+
+
+.ChooseArea .ChooseBody .ChooseBox{text-align:center}
+.ChooseArea .ChooseBody .ChooseBox h3{color:#000;font-size:40px;font-weight:800;line-height:50px}
+.ChooseArea .ChooseBody .ChooseBox p{font-size:18px;color:#535252;font-weight:500;line-height:22px;margin:0 0 20px 0;letter-spacing:.5px}
+
+.ChooseArea .ChooseBody .ChooseBox figure{
+    max-height: 550px;
+    overflow: hidden;
+    margin: 40px 0 0 0;
+}
+.ChooseArea .ChooseBody .ChooseBox figure img{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.TailoredArea{display:flex;align-items:center;background-color: #fffefa;}
 .TailoredArea .TailoredLeft{width:50%}
-.TailoredArea .TailoredLeft aside{width:70%;margin:0 0 0 auto;padding:0 100px 0 0}
+.TailoredArea .TailoredLeft aside{width: 80%;margin:0 0 0 auto;padding: 0 80px 0 0;}
 .TailoredArea .TailoredLeft aside h2{color:#000;font-size:50px;margin:0 0 30px 0;font-weight:900;text-transform:capitalize}
 .TailoredArea .TailoredLeft aside ul{display:flex;gap:15px;flex-wrap:wrap}
 .TailoredArea .TailoredLeft aside ul li{width:48%}
@@ -424,6 +501,9 @@ select{cursor: pointer;outline: 0;}
 .LocalArea h3{color:#000;font-size:36px;margin:0 0 40px 0;font-weight:800;text-transform:capitalize;text-align:center}
 .LocalArea h3 span{color:#1359a1;display:block}
 .LocalArea figure{ margin:0 }
+.LocalArea ul{margin:0;gap: 15px;display: flex;flex-wrap: wrap;justify-content: center;}
+.LocalArea ul li{ display:inline-block; }
+.LocalArea ul li img{max-height: 155px;}
 
 footer{background-color:#0c4c8a}
 footer .Footer{padding:30px 0}
