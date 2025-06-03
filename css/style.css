@@ -390,7 +390,7 @@ select{cursor: pointer;outline: 0;}
 .BusinessArea{
     background: #fcfbf8;
     position: relative;
-    padding: 0;
+    padding: 260px 0 110px 0;
     background-image: linear-gradient(45deg, #fffefa, #efebe2);
 }
 
@@ -408,7 +408,9 @@ select{cursor: pointer;outline: 0;}
 .BusinessArea .BusinessBody{
     text-align: center;
 }
-.BusinessArea .BusinessBody img{}
+.BusinessArea .BusinessBody img{
+    max-width: 400px;
+}
 
 
 .BusinessArea .BusinessFooter{
@@ -439,16 +441,33 @@ select{cursor: pointer;outline: 0;}
 }
 
 .ChooseArea .ChooseBody{}
+.ChooseArea .ChooseBody h3{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin: 0 0 26px 0;
+    line-height: 50px;
+}
+.ChooseArea .ChooseBody h3 span{display:block;color: #0d4d89;}
 
 
 .ChooseArea .ChooseBody .ChooseBox{text-align:center}
-.ChooseArea .ChooseBody .ChooseBox h3{color:#000;font-size:40px;font-weight:800;line-height:50px}
-.ChooseArea .ChooseBody .ChooseBox p{font-size:18px;color:#535252;font-weight:500;line-height:22px;margin:0 0 20px 0;letter-spacing:.5px}
-
+.ChooseArea .ChooseBody .ChooseBox h4{color:#000;font-size:40px;font-weight:800;line-height:50px}
+.ChooseArea .ChooseBody .ChooseBox p{font-size: 15px;color:#535252;font-weight:500;line-height: 18px;margin:0 0 20px 0;letter-spacing:.5px}
+.ChooseArea .ChooseBody .ChooseBox p span{
+    background-color: #e9f0f7;
+    color: #000;
+    display: inline-block;
+    padding: 7px 16px;
+    border-radius: 5px;
+}
 .ChooseArea .ChooseBody .ChooseBox figure{
     max-height: 550px;
     overflow: hidden;
-    margin: 40px 0 0 0;
+    width: 90%;
+    margin: 0 auto 30px;
+    border-radius: 20px;
 }
 .ChooseArea .ChooseBody .ChooseBox figure img{}
 
@@ -627,8 +646,10 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .DisplayArea .DisplayBody .owl-nav .owl-next:hover{background-color:#0c4c8a;color:#fff}
 
 .DisplayBox{background-color:#f2f2f2;padding:20px;border-radius:10px;margin:40px 0 0 0}
+.DisplayBox figure{margin: 0 0 20px 0;text-align: center;}
+.DisplayBox figure img{/* width:100%; */max-height: 225px;}
 .DisplayBox figcaption h3{color:#000;font-size:24px;margin:0 0 10px 0;font-weight:700;text-transform:capitalize}
-.DisplayBox figcaption p{font-size:15px;color:#535252;font-weight:500;line-height:22px;margin:0 0 15px 0}
+.DisplayBox figcaption p{font-size:15px;color:#535252;font-weight:500;line-height:22px;margin:0 0 15px 0;min-height: 60px;}
 .DisplayBox figcaption h6{margin:0 0 15px 0;font-weight:700;font-size:14px;color:#484747}
 .DisplayBox figcaption a{border-radius: 6px;background-color: #fff;color: #0d4d89;padding:7px 40px;display:inline-block;font-weight:700;font-size:16px;border: 2px solid #0d4d89;}
 .DisplayBox figcaption a:hover{ background-color:#e4eefd }
