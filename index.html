@@ -702,30 +702,32 @@
             }
         }
     </script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".dropdown").hover(
+            function () {
+                // Only show the menu related to the hovered dropdown
+                $(this).find(".dropdown-menu").stop(true, true).slideDown(300);
+                $(this).addClass("open");
+            },
+            function () {
+                // Only hide the menu related to the hovered dropdown
+                $(this).find(".dropdown-menu").stop(true, true).slideUp(300);
+                $(this).removeClass("open");
+            }
+        );
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".dropdown").hover(
-                function () {
-                    $(".dropdown-menu", this).stop(true, true).slideDown(400);
-                    $("body").toggleClass("open");
-                },
-                function () {
-                     $(".dropdown-menu", this).hide()
-                    // $(".dropdown-menu", this).stop(true, true).slideUp(400);
-                     $("body").toggleClass("open");
-                }
-            );
-            $(".Languauge").hover(
-                function () {
-                    $(".dropdown-menu", this).stop(true, true).slideDown(400);
-                },
-                function () {
-                    $(".dropdown-menu", this).stop(true, true).slideUp(400);
-                }
-            );
-        });
-    </script>
+        $(".Languauge").hover(
+            function () {
+                $(this).find(".dropdown-menu").stop(true, true).slideDown(300);
+            },
+            function () {
+                $(this).find(".dropdown-menu").stop(true, true).slideUp(300);
+            }
+        );
+    });
+</script>
+
 
     <script type="text/javascript">
         $(document).ready(function(){
