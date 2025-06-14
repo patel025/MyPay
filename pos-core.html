@@ -1,206 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>My Pay</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-</head>
-<body> 
+    <head>
+        <title>My Pay</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <header>
+            <div class="Header">
+                <div class="container">
+                    <nav class="navbar navbar-expand">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/Logo.png" />
+                        </a>
 
-    <header>
-        <div class="Header">
-            <div class="container">
-                <nav class="navbar navbar-expand">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/Logo.png" />
-                    </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                    Products
-                                </a>
-                                <div class="dropdown-menu product_menu">
-                                    <div class="container">
-                                        <div class="product_box">
-                                            <ul>
-                                                <li class="product_dropdown">
-                                                    <a href="javascript:void(0);">POS Packages</a>
-                                                    <div class="product_submenu">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="pos-core.html">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/1BXsrMLKeBfUNzSuq1hPOR/8b49458fd3df20e982c7815a5bbaea83/PD05653_-_Register_Subnav.png" /></span>
-                                                                    <span>POS Core</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="pos-elite.html">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/56XkDFljFsXkrddxJTEbeo/2d334b209bae844e0d49c6b56b8550ca/PD05653_-_Terminal_Subnav.png" /></span>
-                                                                    <span>POS Elite</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="pos-mini.html">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/4g86hwVhCYMbNdXqRaji23/a44d8fd456480b771d712aa9c2df6db6/stand.png" /></span>
-                                                                    <span>POS Mini</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="pos-pro.html">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/3DOgAgY2mszgUtoy6zvHo2/fd5673c082c91790443fd67f89aeca84/Kiosk.png" /></span>
-                                                                    <span>POS Pro</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="self-order.html">Self Order kiosk</a>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="online-order.html">Online Order</a>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="accesories.html">Accesories</a>
-                                                    <div class="product_submenu">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/1BXsrMLKeBfUNzSuq1hPOR/8b49458fd3df20e982c7815a5bbaea83/PD05653_-_Register_Subnav.png" /></span>
-                                                                    <span>Register</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/56XkDFljFsXkrddxJTEbeo/2d334b209bae844e0d49c6b56b8550ca/PD05653_-_Terminal_Subnav.png" /></span>
-                                                                    <span>Terminal</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/4g86hwVhCYMbNdXqRaji23/a44d8fd456480b771d712aa9c2df6db6/stand.png" /></span>
-                                                                    <span>Stand</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/3DOgAgY2mszgUtoy6zvHo2/fd5673c082c91790443fd67f89aeca84/Kiosk.png" /></span>
-                                                                    <span>Kisok</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="javascript:void(0);">Business Account</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                    Business Areas
-                                </a>
-                                <div class="dropdown-menu business_menu">
-                                    <div class="container">
-                                        <div class="business_box">
-                                            <ul>
-                                                <li class="business_dropdown">
-                                                    <a href="business-beverage.html" data-id="1">Food & Beverage</a>
-                                                    
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="business-retail.html" data-id="2">Retail</a>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="business-services.html" data-id="3">Services</a>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="business-ecommerce.html" data-id="4">Ecommerce</a>
-                                                </li>
-                                            </ul>
-                                            <div class="business_submenu">
-                                                <img src="https://cdn.pixabay.com/photo/2017/01/31/09/30/raspberries-2023404_640.jpg" />
-                                                <img src="https://cdn.pixabay.com/photo/2017/04/06/22/48/store-2209526_640.jpg" />
-                                                <img src="https://cdn.pixabay.com/photo/2016/04/02/17/58/service-1303313_640.jpg" />
-                                                <img src="https://cdn.pixabay.com/photo/2017/03/01/10/03/online-sales-2108028_640.jpg" />
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                        Products
+                                    </a>
+                                    <div class="dropdown-menu product_menu">
+                                        <div class="container">
+                                            <div class="product_box">
+                                                <ul>
+                                                    <li class="product_dropdown">
+                                                        <a href="javascript:void(0);">POS Packages</a>
+                                                        <div class="product_submenu">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="pos-core.html">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/1BXsrMLKeBfUNzSuq1hPOR/8b49458fd3df20e982c7815a5bbaea83/PD05653_-_Register_Subnav.png" /></span>
+                                                                        <span>POS Core</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="pos-elite.html">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/56XkDFljFsXkrddxJTEbeo/2d334b209bae844e0d49c6b56b8550ca/PD05653_-_Terminal_Subnav.png" /></span>
+                                                                        <span>POS Elite</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="pos-mini.html">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/4g86hwVhCYMbNdXqRaji23/a44d8fd456480b771d712aa9c2df6db6/stand.png" /></span>
+                                                                        <span>POS Mini</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="pos-pro.html">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/3DOgAgY2mszgUtoy6zvHo2/fd5673c082c91790443fd67f89aeca84/Kiosk.png" /></span>
+                                                                        <span>POS Pro</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="self-order.html">Self Order kiosk</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="online-order.html">Online Order</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="accesories.html">Accesories</a>
+                                                        <div class="product_submenu">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/1BXsrMLKeBfUNzSuq1hPOR/8b49458fd3df20e982c7815a5bbaea83/PD05653_-_Register_Subnav.png" /></span>
+                                                                        <span>Register</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/56XkDFljFsXkrddxJTEbeo/2d334b209bae844e0d49c6b56b8550ca/PD05653_-_Terminal_Subnav.png" /></span>
+                                                                        <span>Terminal</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/4g86hwVhCYMbNdXqRaji23/a44d8fd456480b771d712aa9c2df6db6/stand.png" /></span>
+                                                                        <span>Stand</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/3DOgAgY2mszgUtoy6zvHo2/fd5673c082c91790443fd67f89aeca84/Kiosk.png" /></span>
+                                                                        <span>Kisok</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="javascript:void(0);">Business Account</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="support.html">Support</a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);">+45 51880730</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link Login" href="javascript:void(0);">Log in</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link Touch" href="started.html">Get Started</a>
-                            </li>
-                            <li class="nav-item Languauge">
-                                <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                    <i class="fa fa-globe" aria-hidden="true"></i>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('en')">English</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('da')">Danish</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('es')">Spanish</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('de')">German</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('fr')">French</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('sv')">Swedish</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div id="google_translate_element" style="display: none;"></div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                        Business Areas
+                                    </a>
+                                    <div class="dropdown-menu business_menu">
+                                        <div class="container">
+                                            <div class="business_box">
+                                                <ul>
+                                                    <li class="business_dropdown">
+                                                        <a href="business-beverage.html" data-id="1">Food & Beverage</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="business-retail.html" data-id="2">Retail</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="business-services.html" data-id="3">Services</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="business-ecommerce.html" data-id="4">Ecommerce</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="business_submenu">
+                                                    <img src="https://cdn.pixabay.com/photo/2017/01/31/09/30/raspberries-2023404_640.jpg" />
+                                                    <img src="https://cdn.pixabay.com/photo/2017/04/06/22/48/store-2209526_640.jpg" />
+                                                    <img src="https://cdn.pixabay.com/photo/2016/04/02/17/58/service-1303313_640.jpg" />
+                                                    <img src="https://cdn.pixabay.com/photo/2017/03/01/10/03/online-sales-2108028_640.jpg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="support.html">Support</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0);">+45 51880730</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link Login" href="javascript:void(0);">Log in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link Touch" href="started.html">Get Started</a>
+                                </li>
+                                <li class="nav-item Languauge">
+                                    <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('en')">English</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('da')">Danish</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('es')">Spanish</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('de')">German</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('fr')">French</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('sv')">Swedish</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div id="google_translate_element" style="display: none;"></div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="CoreArea">
+                <div class="container">
+                    <div class="CoreBox">
+                        <article>
+                            <h1>POS Core</h1>
+                        </article>
+                        <article>
+                            <p>A reliable, single screen POS that include all the essentials to run your business smoothly</p>
+                        </article>
                     </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    
-    <section>
-        <div class="CoreArea">
-            <div class="container">
-                <div class="CoreBox">
-                    <article>
-                        <h1>POS Core</h1>
-                    </article>
-                    <article>
-                        <p>A reliable, single screen POS that include all the essentials to run your business smoothly</p>
-                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <div class="CoreProductArea">
-            <div class="container">
-                <div class="CoreProductBox">
-                    <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f6f_terminal-and-dashboard-en.png">
+        <section>
+            <div class="CoreProductArea">
+                <div class="container">
+                    <div class="CoreProductBox">
+                        <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f6f_terminal-and-dashboard-en.png" />
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- <section>
+        <!-- <section>
         <div class="CoreFocusArea">
             <div class="container">
                 <div class="CoreFocusBox">
@@ -217,85 +215,87 @@
         </div>
     </section> -->
 
-    <section>
-        <div class="HighlightsArea">
-            <div class="container">
-                <div class="HighlightsHead">
-                    <h3>Get the highlights</h3>
-                    <p>Our advanced solution not only gives you an efficient overview, but also ensures a more <br> engaging customer experience – all in one elegant unit.</p>
-                </div>
-                <div class="HighlightsBody">
-                    <div class="">
-                        <article data-theme="orange"> 
-                            <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/672b6d0c074b4f4921e811df_da_pos_premium_screen-p-800.avif">
-                        </article>
-                        <aside data-theme="green">
-                            <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/6721427e18f0258db6c07721_de_pos_premium_printer-p-800.avif">
-                        </aside>
+        <section>
+            <div class="HighlightsArea">
+                <div class="container">
+                    <div class="HighlightsHead">
+                        <h3>Get the highlights</h3>
+                        <p>
+                            Our advanced solution not only gives you an efficient overview, but also ensures a more <br />
+                            engaging customer experience – all in one elegant unit.
+                        </p>
                     </div>
-                    <div class="">
-                        <article data-theme="blurpel">
-                            <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/672b6d0c22d6ca5d0e5e531c_da_pos_premium_customer_screen-p-800.avif">
-                        </article>
-                        <aside data-theme="pink">
-                            <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/673464a7a83e33dd8315b90f_da_pos_premium_connection-p-800.avif">
-                        </aside>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section>
-        <div class="AcceptArea">
-            <div class="container">
-                <div class="AcceptHead">
-                    <h2>Accept payments anywhere</h2>
-                </div>
-                <div class="AcceptBody">
-                    <div class="AcceptLeft">
-                        <article>
-                            <img src="https://images.ctfassets.net/2d5q1td6cyxq/4OXTBgjXkTOYuG3onjy89Z/1e752ae60920ae7bff3513cb02079a3d/PD07138-payments-anywhere-stand-.png?fm=avif&q=85&fit=fill&w=1460">
-                        </article>
-                        <article>
-                            <img src="https://images.ctfassets.net/2d5q1td6cyxq/2ua0sZg8olHWWoJNEArADU/97d61cf237a833406f09ea80d7c20eac/PD07138-payments-anywhere-laptop.png?fm=avif&q=85&fit=fill&w=1460">
-                        </article>
-                        <article>
-                            <img src="https://images.ctfassets.net/2d5q1td6cyxq/5fVYJNtsYE0fiDKmsZXtXK/b7f669016855e59ffa96ee3fbe54d260/PD07138-payments-anywhere-tablet.png?fm=avif&q=85&fit=fill&w=1460">
-                        </article> 
-                        <article>
-                            <img src="https://images.ctfassets.net/2d5q1td6cyxq/4Omd2jZ1FKaP9xVEACiDbz/6ec097e2c40d11b0ae7fca1dd76a34e6/PD07138-payments-anywhere-phone.png?fm=avif&q=85&fit=fill&w=1460">
-                        </article>
-                    </div>
-                    <div class="AcceptRight">
-                        <article>
-                            <span><img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f0f_icon-POS%20Hardware.svg"> </span>
-                            <h4>Hardware</h4>
-                            <p>Flatpay handpicks the best hardware on the market to deliver a reliable and efficient POS system that ensures exceptional performance for your business.</p>
-                        </article>
-                        <article>
-                            <span><img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f0d_icon-POS%20System.svg"> </span>
-                            <h4>Software</h4>
-                            <p>Experience Flatpay's user-friendly checkout system, packed with core features such as flexible product categorization, performance analytics and much more.</p>
-                        </article>
-                        <article>
-                            <span><img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f12_icon-Support%202.svg"> </span>
-                            <h4>We are here for you.</h4>
-                            <p>We always have 24/7 customer service so our customers have access to the help they need. Our team is dedicated to always providing immediate assistance.</p>
-                        </article>
-                        <article>
-                            <span><img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f0e_icon-No%20surprises.svg"> </span>
-                            <h4>No surprises</h4>
-                            <p>With our cash register and payment terminal, there is a low start-up price, no monthly costs and absolutely no hidden fees.</p>
-                        </article>
+                    <div class="HighlightsBody">
+                        <div class="">
+                            <article data-theme="orange">
+                                <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/672b6d0c074b4f4921e811df_da_pos_premium_screen-p-800.avif" />
+                            </article>
+                            <aside data-theme="green">
+                                <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/6721427e18f0258db6c07721_de_pos_premium_printer-p-800.avif" />
+                            </aside>
+                        </div>
+                        <div class="">
+                            <article data-theme="blurpel">
+                                <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/672b6d0c22d6ca5d0e5e531c_da_pos_premium_customer_screen-p-800.avif" />
+                            </article>
+                            <aside data-theme="pink">
+                                <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/673464a7a83e33dd8315b90f_da_pos_premium_connection-p-800.avif" />
+                            </aside>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-<!-- 
+        <section>
+            <div class="AcceptArea">
+                <div class="container">
+                    <div class="AcceptHead">
+                        <h2>Accept payments anywhere</h2>
+                    </div>
+                    <div class="AcceptBody">
+                        <div class="AcceptLeft">
+                            <article>
+                                <img src="https://images.ctfassets.net/2d5q1td6cyxq/4OXTBgjXkTOYuG3onjy89Z/1e752ae60920ae7bff3513cb02079a3d/PD07138-payments-anywhere-stand-.png?fm=avif&q=85&fit=fill&w=1460" />
+                            </article>
+                            <article>
+                                <img src="https://images.ctfassets.net/2d5q1td6cyxq/2ua0sZg8olHWWoJNEArADU/97d61cf237a833406f09ea80d7c20eac/PD07138-payments-anywhere-laptop.png?fm=avif&q=85&fit=fill&w=1460" />
+                            </article>
+                            <article>
+                                <img src="https://images.ctfassets.net/2d5q1td6cyxq/5fVYJNtsYE0fiDKmsZXtXK/b7f669016855e59ffa96ee3fbe54d260/PD07138-payments-anywhere-tablet.png?fm=avif&q=85&fit=fill&w=1460" />
+                            </article>
+                            <article>
+                                <img src="https://images.ctfassets.net/2d5q1td6cyxq/4Omd2jZ1FKaP9xVEACiDbz/6ec097e2c40d11b0ae7fca1dd76a34e6/PD07138-payments-anywhere-phone.png?fm=avif&q=85&fit=fill&w=1460" />
+                            </article>
+                        </div>
+                        <div class="AcceptRight">
+                            <article>
+                                <span><img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f0f_icon-POS%20Hardware.svg" /> </span>
+                                <h4>Hardware</h4>
+                                <p>Flatpay handpicks the best hardware on the market to deliver a reliable and efficient POS system that ensures exceptional performance for your business.</p>
+                            </article>
+                            <article>
+                                <span><img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f0d_icon-POS%20System.svg" /> </span>
+                                <h4>Software</h4>
+                                <p>Experience Flatpay's user-friendly checkout system, packed with core features such as flexible product categorization, performance analytics and much more.</p>
+                            </article>
+                            <article>
+                                <span><img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f12_icon-Support%202.svg" /> </span>
+                                <h4>We are here for you.</h4>
+                                <p>We always have 24/7 customer service so our customers have access to the help they need. Our team is dedicated to always providing immediate assistance.</p>
+                            </article>
+                            <article>
+                                <span><img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f0e_icon-No%20surprises.svg" /> </span>
+                                <h4>No surprises</h4>
+                                <p>With our cash register and payment terminal, there is a low start-up price, no monthly costs and absolutely no hidden fees.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
     <section>
         <div class="IncludeArea">
             <div class="container">
@@ -338,21 +338,28 @@
     </section>
  -->
 
-    <section>
-        <div class="StartedArea">
-            <div class="StartedBox">
-                <article>
-                    <h2>Boost your business with <br> <span> <img src="images/Logo.png"> </span> today! </h2>
-                    <p>MyPay's all-in-one POS systems make it easy to sell <br> smarter, serve  faster, grow your business <br> with confidence </p>
-                </article>
-                <aside>
-                    <a href="">Become a customer</a>
-                </aside>
+        <section>
+            <div class="StartedArea">
+                <div class="StartedBox">
+                    <article>
+                        <h2>
+                            Boost your business with <br />
+                            <span> <img src="images/Logo.png" /> </span> today!
+                        </h2>
+                        <p>
+                            MyPay's all-in-one POS systems make it easy to sell <br />
+                            smarter, serve faster, grow your business <br />
+                            with confidence
+                        </p>
+                    </article>
+                    <aside>
+                        <a href="">Become a customer</a>
+                    </aside>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- <section>
+        <!-- <section>
         <div class="KitchenArea">
             <div class="container">
                 <div class="KitchenBox">
@@ -374,394 +381,429 @@
         </div>
     </section> -->
 
-    <section>
-        <div class="PrinterArea">
-            <div class="container">
-                <div class="PrinterBoxHead">
-                    <h6>Introducing new</h6>
-                    <h3>Kitchen Printer</h3>
+        <section>
+            <div class="PrinterArea">
+                <div class="container">
+                    <div class="PrinterBoxHead">
+                        <h6>Introducing new</h6>
+                        <h3>Kitchen Printer</h3>
+                    </div>
+                    <div class="PrinterBoxBody">
+                        <div class="row">
+                            <div class="col-sm-10 offset-sm-1">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="PrinterBox">
+                                            <h6>Up to</h6>
+                                            <h5>3x</h5>
+                                            <p>
+                                                quicker than <br />
+                                                manual flow
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="PrinterBox">
+                                            <h6>Up to</h6>
+                                            <h5>5</h5>
+                                            <p>
+                                                Kitchen printers connected <br />
+                                                to one system
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="PrinterBox">
+                                            <h6>Up to</h6>
+                                            <h5>5 sec</h5>
+                                            <p>
+                                                from order placed to <br />
+                                                kitchen printout
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="PrinterBoxBody">
+            </div>
+        </section>
+
+        <section>
+            <div class="CustomArea BGColor" style="padding-top: 50px;">
+                <h3>A custom rate tailored for you</h3>
+                <p>
+                    Some customer can get a custom rate if they meet certain criteria. <br />
+                    Curious if you quality? Check it out and see if you're eligible!
+                </p>
+                <a href="">Get in touch</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="RetailSlide">
+                <div class="container">
+                    <h2>
+                        Powered by Mypay <br />
+                        point-of-sale software.
+                    </h2>
+                    <div id="Slide" class="carousel slide">
+                        <div class="text-center">
+                            <ul class="carousel-indicators">
+                                <li data-target="#Slide" data-slide-to="0" class="active">Retail</li>
+                                <li data-target="#Slide" data-slide-to="1">Restaurants</li>
+                                <li data-target="#Slide" data-slide-to="2">Service</li>
+                            </ul>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="RetailBox">
+                                    <figcaption>
+                                        <h3>Mypay for Retail</h3>
+                                        <p>
+                                            Mypay for Retail is the retail POS system that brings your storefront, back office and online selling together. Manage inventory across locations, process itemised exchanges, and ring up sales by
+                                            keyword or bar code scan. Get started for free today.
+                                        </p>
+                                    </figcaption>
+                                    <figure>
+                                        <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f6f_terminal-and-dashboard-en.png" />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="RetailBox">
+                                    <figcaption>
+                                        <h3>Mypay for Restaurants</h3>
+                                        <p>
+                                            Mypay for Restaurants is the retail POS system that brings your storefront, back office and online selling together. Manage inventory across locations, process itemised exchanges, and ring up
+                                            sales by keyword or bar code scan. Get started for free today.
+                                        </p>
+                                    </figcaption>
+                                    <figure>
+                                        <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f6f_terminal-and-dashboard-en.png" />
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="RetailBox">
+                                    <figcaption>
+                                        <h3>Mypay for Service</h3>
+                                        <p>
+                                            Mypay for Service is the retail POS system that brings your storefront, back office and online selling together. Manage inventory across locations, process itemised exchanges, and ring up sales by
+                                            keyword or bar code scan. Get started for free today.
+                                        </p>
+                                    </figcaption>
+                                    <figure>
+                                        <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f6f_terminal-and-dashboard-en.png" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="DisplayArea">
+                <div class="container">
+                    <div class="DisplayHead">
+                        <h2>Other hardware options</h2>
+                        <p>
+                            choose your accessories, hardware and setup. Build POS system that fits your <br />
+                            workflow not the other way aroun
+                        </p>
+                    </div>
+                    <div class="DisplayBody">
+                        <div class="owl-carousel owl-theme" id="BranchSlide">
+                            <div class="item">
+                                <div class="DisplayBox">
+                                    <figure>
+                                        <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale" />
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Weight</h3>
+                                        <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
+                                        <h6>$799 or $39/mo over 24 months¹</h6>
+                                        <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
+                                    </figcaption>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="DisplayBox">
+                                    <figure>
+                                        <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale" />
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Weight</h3>
+                                        <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
+                                        <h6>$799 or $39/mo over 24 months¹</h6>
+                                        <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
+                                    </figcaption>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="DisplayBox">
+                                    <figure>
+                                        <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale" />
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Weight</h3>
+                                        <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
+                                        <h6>$799 or $39/mo over 24 months¹</h6>
+                                        <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
+                                    </figcaption>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="DisplayBox">
+                                    <figure>
+                                        <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale" />
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Weight</h3>
+                                        <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
+                                        <h6>$799 or $39/mo over 24 months¹</h6>
+                                        <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
+                                    </figcaption>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="DisplayBox">
+                                    <figure>
+                                        <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale" />
+                                    </figure>
+                                    <figcaption>
+                                        <h3>Weight</h3>
+                                        <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
+                                        <h6>$799 or $39/mo over 24 months¹</h6>
+                                        <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
+                                    </figcaption>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="Footer">
+                    <h1>Make it Simple.</h1>
                     <div class="row">
-                        <div class="col-sm-10 offset-sm-1">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="PrinterBox">
-                                        <h6>Up to</h6>
-                                        <h5>3x</h5>
-                                        <p>quicker than <br> manual flow</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="PrinterBox">
-                                        <h6>Up to</h6>
-                                        <h5>5</h5>
-                                        <p>Kitchen printers connected <br> to one system</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="PrinterBox">
-                                        <h6>Up to</h6>
-                                        <h5>5 sec</h5>
-                                        <p>from order placed to <br> kitchen printout</p>
-                                    </div>
-                                </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>&nbsp;</h3>
+                                <a href="index.html">
+                                    <img src="images/Footer-Logo.png" style="filter: brightness(0) invert(1);" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>Business Types</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0);">Restaurant</a></li>
+                                    <li><a href="javascript:void(0);">Cantine</a></li>
+                                    <li><a href="javascript:void(0);">Fast Casual</a></li>
+                                    <li><a href="javascript:void(0);">Bar </a></li>
+                                    <li><a href="javascript:void(0);">Bazar</a></li>
+                                    <li><a href="javascript:void(0);">Grocery store</a></li>
+                                    <li><a href="javascript:void(0);">Beauty Salon</a></li>
+                                    <li><a href="javascript:void(0);">Barbershop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>&nbsp;</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0);">Hair Salon</a></li>
+                                    <li><a href="javascript:void(0);">Nail Salon</a></li>
+                                    <li><a href="javascript:void(0);">Day Spa</a></li>
+                                    <li><a href="javascript:void(0);">Tattoo & Piercing</a></li>
+                                    <li><a href="javascript:void(0);">Fitness</a></li>
+                                    <li><a href="javascript:void(0);">Professional Services</a></li>
+                                    <li><a href="javascript:void(0);">Home & Repair</a></li>
+                                    <li><a href="javascript:void(0);">Franchises</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>Products</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0);">POS</a></li>
+                                    <li><a href="javascript:void(0);">Payments</a></li>
+                                    <li><a href="javascript:void(0);">Self order</a></li>
+                                    <li><a href="javascript:void(0);">Online order</a></li>
+                                    <li><a href="javascript:void(0);">Accesories</a></li>
+                                    <li><a href="javascript:void(0);">Business bank account</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>Support</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0);">KYC</a></li>
+                                    <li><a href="javascript:void(0);">Privacy Policy </a></li>
+                                    <li><a href="javascript:void(0);">Terms & Conditions </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>Contact us</h3>
+                                <p>
+                                    <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> <a href="">info@mypay.nu</a>
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-mobile" aria-hidden="true"></i></span> <a href="">+45 51 88 07 30</a>
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-globe" aria-hidden="true"></i></span> <a href="">www.mypay.nu</a>
+                                </p>
+                                <ol>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                    </li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="CustomArea BGColor" style="padding-top: 50px;">
-            <h3>A custom rate tailored for you</h3>
-            <p>Some customer can get a custom rate if they meet certain criteria. <br> Curious if you quality? Check it out and see  if you're eligible!</p>
-            <a href="">Get in touch</a>
-        </div>
-    </section>
-
-    <section>
-        <div class="RetailSlide">
-            <div class="container">
-                <h2>Powered by Mypay <br> point-of-sale software.</h2>
-                <div id="Slide" class="carousel slide" > 
-                    <div class="text-center">
-                        <ul class="carousel-indicators">
-                            <li data-target="#Slide" data-slide-to="0" class="active">Retail</li>
-                            <li data-target="#Slide" data-slide-to="1">Restaurants</li> 
-                            <li data-target="#Slide" data-slide-to="2">Service</li> 
-                        </ul> 
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="RetailBox">
-                                <figcaption>
-                                    <h3>Mypay for Retail</h3>
-                                    <p>Mypay for Retail is the retail POS system that brings your storefront, back office and online selling together. Manage inventory across locations, process itemised exchanges, and ring up sales by keyword or bar code scan. Get started for free today.</p>
-                                </figcaption>
-                                <figure>
-                                    <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f6f_terminal-and-dashboard-en.png">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="RetailBox">
-                                <figcaption>
-                                    <h3>Mypay for Restaurants</h3>
-                                    <p>Mypay for Restaurants is the retail POS system that brings your storefront, back office and online selling together. Manage inventory across locations, process itemised exchanges, and ring up sales by keyword or bar code scan. Get started for free today.</p>
-                                </figcaption>
-                                <figure>
-                                    <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f6f_terminal-and-dashboard-en.png">
-                                </figure>
-                            </div>
-                        </div> 
-                        <div class="carousel-item">
-                            <div class="RetailBox">
-                                <figcaption>
-                                    <h3>Mypay for Service</h3>
-                                    <p>Mypay for Service is the retail POS system that brings your storefront, back office and online selling together. Manage inventory across locations, process itemised exchanges, and ring up sales by keyword or bar code scan. Get started for free today.</p>
-                                </figcaption>
-                                <figure>
-                                    <img src="https://cdn.prod.website-files.com/65fc2e7beab77bb93bb09e61/65fc2e7beab77bb93bb09f6f_terminal-and-dashboard-en.png">
-                                </figure>
-                            </div>
-                        </div> 
-                    </div> 
-                </div> 
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="DisplayArea">
-            <div class="container">
-                <div class="DisplayHead">
-                    <h2>Other hardware options</h2>
-                    <p>choose your accessories, hardware and setup. Build POS system that fits your <br> workflow not the other way aroun </p>
-                </div>
-                <div class="DisplayBody">
-                    <div class="owl-carousel owl-theme" id="BranchSlide">
-                        <div class="item">
-                            <div class="DisplayBox">
-                                <figure>
-                                    <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale">
-                                </figure>
-                                <figcaption>
-                                    <h3>Weight</h3>
-                                    <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
-                                    <h6>$799 or $39/mo over 24 months¹</h6> 
-                                    <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="DisplayBox">
-                                <figure>
-                                    <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale">
-                                </figure>
-                                <figcaption>
-                                    <h3>Weight</h3>
-                                    <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
-                                    <h6>$799 or $39/mo over 24 months¹</h6> 
-                                    <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="DisplayBox">
-                                <figure>
-                                    <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale">
-                                </figure>
-                                <figcaption>
-                                    <h3>Weight</h3>
-                                    <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
-                                    <h6>$799 or $39/mo over 24 months¹</h6> 
-                                    <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="DisplayBox">
-                                <figure>
-                                    <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale">
-                                </figure>
-                                <figcaption>
-                                    <h3>Weight</h3>
-                                    <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
-                                    <h6>$799 or $39/mo over 24 months¹</h6> 
-                                    <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="DisplayBox">
-                                <figure>
-                                    <img src="https://images.ctfassets.net/2d5q1td6cyxq/5wzRaFkBsCOcTsEMUSAEJ2/fdf1e90a118fb7ff18411ba9551ac112/PD02462_-_USEN_Register_Tap_Tile.png?w=493&amp;h=493&amp;fm=avif&amp;q=85&amp;fit=scale">
-                                </figure>
-                                <figcaption>
-                                    <h3>Weight</h3>
-                                    <p>Our most complete point-of-sale with two user-friendly displays, easy-to-use software options and built-in payments.</p>
-                                    <h6>$799 or $39/mo over 24 months¹</h6> 
-                                    <a href="/shop/hardware/us/en/products/register-pos">Buy</a>
-                                </figcaption>
-                            </div>
-                        </div>
-                    </div>
+                <div class="Copyright">
+                    <p>© 2025 Copyright all right reserved by MyPay.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <footer>
-        <div class="container">
-            <div class="Footer">
-                <h1>Make it Simple.</h1>
-                <div class="row">
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>&nbsp;</h3>
-                            <a href="index.html">
-                                <img src="images/Footer-Logo.png" style="filter: brightness(0) invert(1);">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>Business Types</h3>
-                            <ul> 
-                                <li><a href="javascript:void(0);">Restaurant</a></li>
-                                <li><a href="javascript:void(0);">Cantine</a></li>
-                                <li><a href="javascript:void(0);">Fast Casual</a></li>
-                                <li><a href="javascript:void(0);">Bar </a></li>
-                                <li><a href="javascript:void(0);">Bazar</a></li>
-                                <li><a href="javascript:void(0);">Grocery store</a></li>
-                                <li><a href="javascript:void(0);">Beauty Salon</a></li> 
-                                <li><a href="javascript:void(0);">Barbershop</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>&nbsp;</h3>
-                            <ul>  
-                                <li><a href="javascript:void(0);">Hair Salon</a></li>
-                                <li><a href="javascript:void(0);">Nail Salon</a></li>
-                                <li><a href="javascript:void(0);">Day Spa</a></li>
-                                <li><a href="javascript:void(0);">Tattoo & Piercing</a></li>
-                                <li><a href="javascript:void(0);">Fitness</a></li>
-                                <li><a href="javascript:void(0);">Professional Services</a></li>
-                                <li><a href="javascript:void(0);">Home & Repair</a></li>
-                                <li><a href="javascript:void(0);">Franchises</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>Products</h3>
-                            <ul> 
-                                <li><a href="javascript:void(0);">POS</a></li> 
-                                <li><a href="javascript:void(0);">Payments</a></li> 
-                                <li><a href="javascript:void(0);">Self order</a></li> 
-                                <li><a href="javascript:void(0);">Online order</a></li> 
-                                <li><a href="javascript:void(0);">Accesories</a></li> 
-                                <li><a href="javascript:void(0);">Business bank account</a></li> 
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>Support</h3>
-                            <ul>
-                                <li><a href="javascript:void(0);">KYC</a></li>
-                                <li><a href="javascript:void(0);">Privacy Policy </a></li>
-                                <li><a href="javascript:void(0);">Terms & Conditions </a></li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="col-sm-2">
-                        <div class="Foots">
-                            <h3>Contact us</h3>
-                            <p><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>  <a href="">info@mypay.nu</a>  </p>
-                            <p><span><i class="fa fa-mobile" aria-hidden="true"></i></span>  <a href="">+45 51 88 07 30</a>   </p>
-                            <p><span><i class="fa fa-globe" aria-hidden="true"></i></span>  <a href="">www.mypay.nu</a>  </p>
-                            <ol>
-                                <li><a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="Copyright">
-                <p>© 2025 Copyright all right reserved by MyPay.</p>
-            </div>
-        </div>
-    </footer>
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scrolla.jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
-        }
-    </script>
-
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <script>
-        function doTranslate(lang) {
-            const select = document.querySelector("select.goog-te-combo");
-            if (select) {
-                select.value = lang;
-                select.dispatchEvent(new Event("change"));
+        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scrolla.jquery.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
             }
-        }
-    </script>
+        </script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#BranchSlide").owlCarousel({
-                loop: true,
-                margin: 15,
-                dots: false,
-                autoplay: true,
-                 smartSpeed: 3000,
-                // slideTransition: 'linear',
-                // autoplaySpeed: 8000,
-                // smartSpeed: 6000,
-                // autoplaySpeed: 3000,
-                // smartSpeed: 8000,
-                nav: true,
-                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                loop: true,
-                responsive: {
-                    0: { items: 1 },
-                    600: { items: 2 },
-                    1000: { items: 3 },
-                },
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <script>
+            function doTranslate(lang) {
+                const select = document.querySelector("select.goog-te-combo");
+                if (select) {
+                    select.value = lang;
+                    select.dispatchEvent(new Event("change"));
+                }
+            }
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#BranchSlide").owlCarousel({
+                    loop: true,
+                    margin: 15,
+                    dots: false,
+                    autoplay: true,
+                    smartSpeed: 3000,
+                    nav: true,
+                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    loop: true,
+                    responsive: {
+                        0: { items: 1 },
+                        600: { items: 2 },
+                        1000: { items: 3 },
+                    },
+                });
             });
-        });
-    </script>
+        </script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".dropdown").hover(
-            function () {
-                $(".dropdown-menu", this).stop(true, true).slideDown(400);
-                $("body").toggleClass("open");
-            },
-            function () {
-                 $(".dropdown-menu", this).hide()
-                // $(".dropdown-menu", this).stop(true, true).slideUp(400);
-                 $("body").toggleClass("open");
-            }
-        );
-        $(".Languauge").hover(
-            function () {
-                $(".dropdown-menu", this).stop(true, true).slideDown(400);
-            },
-            function () {
-                $(".dropdown-menu", this).stop(true, true).slideUp(400);
-            }
-        );
-    });
-</script>
-    
-    <script>
-        $(document).ready(function () {
-            const $articles = $(".AcceptRight article");
-            const $images = $(".AcceptLeft article");
-
-            function showImageForVisibleArticle() {
-                let currentIndex = 0;
-                const windowHeight = $(window).height();
-
-                $articles.each(function (i) {
-                    const offsetTop = $(this).offset().top;
-                    const height = $(this).outerHeight();
-
-                    if (offsetTop < $(window).scrollTop() + windowHeight / 2 && offsetTop + height > $(window).scrollTop() + windowHeight / 2) {
-                        currentIndex = i;
-                        return false; // exit .each loop early
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".dropdown").hover(
+                    function () {
+                        $(".dropdown-menu", this).stop(true, true).slideDown(400);
+                        $("body").toggleClass("open");
+                    },
+                    function () {
+                        $(".dropdown-menu", this).hide();
+                        // $(".dropdown-menu", this).stop(true, true).slideUp(400);
+                        $("body").toggleClass("open");
                     }
+                );
+                $(".Languauge").hover(
+                    function () {
+                        $(".dropdown-menu", this).stop(true, true).slideDown(400);
+                    },
+                    function () {
+                        $(".dropdown-menu", this).stop(true, true).slideUp(400);
+                    }
+                );
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                const $articles = $(".AcceptRight article");
+                const $images = $(".AcceptLeft article");
+
+                function showImageForVisibleArticle() {
+                    let currentIndex = 0;
+                    const windowHeight = $(window).height();
+
+                    $articles.each(function (i) {
+                        const offsetTop = $(this).offset().top;
+                        const height = $(this).outerHeight();
+
+                        if (offsetTop < $(window).scrollTop() + windowHeight / 2 && offsetTop + height > $(window).scrollTop() + windowHeight / 2) {
+                            currentIndex = i;
+                            return false; // exit .each loop early
+                        }
+                    });
+
+                    $images.each(function (i) {
+                        $(this).css("display", i === currentIndex ? "block" : "none");
+                    });
+                }
+
+                // Initial setup
+                $images.css("display", "none").eq(0).css("display", "block");
+
+                // On scroll
+                $(window).on("scroll", function () {
+                    showImageForVisibleArticle();
                 });
 
-                $images.each(function (i) {
-                    $(this).css("display", i === currentIndex ? "block" : "none");
-                });
-            }
-
-            // Initial setup
-            $images.css("display", "none").eq(0).css("display", "block");
-
-            // On scroll
-            $(window).on("scroll", function () {
+                // Also call on page load
                 showImageForVisibleArticle();
             });
+        </script>
 
-            // Also call on page load
-            showImageForVisibleArticle();
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.business_dropdown a').hover(function(){
-                var dataId = $(this).data('id');
-                console.log("dataId",dataId)
-                $('.business_submenu').attr('data-id', dataId);
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".business_dropdown a").hover(function () {
+                    var dataId = $(this).data("id");
+                    console.log("dataId", dataId);
+                    $(".business_submenu").attr("data-id", dataId);
+                });
             });
-        });
-    </script>
-
-</body>
+        </script>
+    </body>
 </html>

@@ -1,8 +1,174 @@
-@media screen and  (min-width: 1700px) {
+@media all and (max-width: 992px) {
 
+    header{ display:none; }
+    
+    .BusinessArea{ padding:50px 0 }
 
-    .DashboardItem .col-sm-6{-ms-flex: 0 0 33.333333%; flex: 0 0 33.333333%; max-width: 33.333333%;}
+    .BusinessArea .BusinessHead h3{ font-size:45px }
+    .BusinessArea .BusinessHead p{ font-size:20px }
+    .BusinessArea .BusinessBody img{ max-width:250px }
 
-}   
+    .ChooseArea .ChooseHead h2{ font-size:36px }
+    .ChooseArea .ChooseBody h3 { font-size:36px }
+    .ChooseArea .ChooseBody .ChooseBox h4{ font-size:30px; line-height:40px }
+
+    .TailoredArea .TailoredLeft aside h2{ font-size:36px  }
+    .TailoredArea .TailoredLeft aside{ width:100%; padding:0 40px  }
+    .TailoredArea .TailoredLeft aside ul li { width:45%  }
+    .TailoredArea .TailoredLeft aside ul li a{ font-size:18px }
+
+    .TabletArea .TabletBox .TabletLeft h3{ font-size:36px }
+
+    .LocalArea ul li img{ max-height:100px }
+
+    .Footer .col-sm-2 { -ms-flex: 0 0 33.33%; flex: 0 0 33.33%; max-width: 33.33%;}
+    footer .Footer h1{ font-size:45px }
+    footer .Footer .Foots{ margin-bottom:30px }
+
+    .CoreArea{ padding:50px 0 }
+    .CoreArea .CoreBox{ flex-wrap:wrap; gap:20px }
+    .CoreArea .CoreBox article{ width:100%; max-width: initial; }
+    .CoreArea .CoreBox article h1{ font-size:50px; line-height:40px }
+    .CoreArea .CoreBox article p{font-size: 18px;line-height: 28px;letter-spacing: 0.5px;}
+
+    .DisplayArea .col-sm-8{-ms-flex: 0 0 90%; flex: 0 0 90%; max-width: 90%; margin: auto;}
+    .DisplayArea h2{ font-size:35px }
+
+    .SolutionsArea .SolutionsBody{ padding:40px 0 }
+    .SolutionsArea .SolutionsBody h3{ font-size:40px }
+
+    .AcceptArea .AcceptHead h2{ font-size:40px }
+    .AcceptArea .AcceptBody{ gap:30px }
+    .AcceptArea .AcceptBody .AcceptLeft{ width:50% }
+    .AcceptArea .AcceptBody .AcceptRight{ width:50% }
+
+    .PrinterArea .PrinterBoxHead h3{ font-size:40px }
+    .PrinterArea .PrinterBoxBody .PrinterBox h5{ font-size:45px }
+
+    .RetailSlide h2 { font-size: 36px;line-height: 130%;}
+    .RetailSlide .RetailBox figcaption h3{ font-size:32px }
+
+    .CoreProductArea .CoreProductHead h3{ font-size:40px }
+
+    .FasterArea .FasterBox .Icon{ max-width:60px }
+    .FasterArea .FasterBox h3{ font-size:20px }
+
+    .PaymentCardArea .PaymentCardHead h3{ font-size:35px }
+    .PaymentCardArea .PaymentCardHead p{ font-size:15px }
+
+    .StartedArea .StartedBox article h2{ font-size:40px }
+    .StartedArea .StartedBox article h2 span{ max-width:130px }
+
+    .HighlightsArea .HighlightsHead h3{ font-size:35px }
+
+    .TouchArea .TouchHead h3{ font-size:45px; margin:0 0 15px 0 }
+    .TouchArea .TouchHead p{ font-size:16px; line-height:24px }
+
+    .SupportArea .SupportHead h1{ font-size:36px }
+
+    .SupportArea .SupportFooter article{ flex-wrap:wrap; }
+    .SupportArea .SupportFooter article aside{ width:48% }
+    .SupportArea .SupportFooter article aside h6 .Faq:last-child{ line-height:33px }
  
- 
+
+
+}
+
+@media all and (max-width: 600px) {
+
+
+    .BusinessArea .BusinessHead h3{ font-size:35px }
+    .BusinessArea .BusinessHead p{ font-size:18px }
+    .BusinessArea .BusinessBody img { max-width: 175px; }
+
+    .ChooseArea .ChooseHead h2{ font-size:26px }
+    .ChooseArea .ChooseHead video{ max-width:auto; width:100% }
+
+    .ChooseArea{ padding:50px 0 20px }
+    .ChooseArea .ChooseBody h3{ font-size:26px; line-height:35px }
+    .ChooseArea .ChooseBody .ChooseBox{ margin-bottom:30px }
+    /*.ChooseArea .ChooseBody .ChooseBox h4{ font-size:25px }*/
+    .ChooseArea .ChooseBody .ChooseBox h4 br{ display:none; }
+
+    .TailoredArea{ flex-wrap:wrap; }
+    .TailoredArea .TailoredLeft{ width:100% }
+    .TailoredArea .TailoredLeft aside{ padding:40px 30px }
+    .TailoredArea .TailoredLeft aside h2{ font-size:30px }
+    .TailoredArea .TailoredLeft aside h2 br{ display:none; }
+    .TailoredArea .TailoredLeft aside ul li a{ font-size:17px }
+    .TailoredArea .TailoredRight{ width:100% }
+
+    .TabletArea .TabletBox .TabletLeft h3{ font-size:26px }
+    .TabletArea .TabletBox .TabletLeft p br{ display:none; }
+
+    .LocalArea h3 {font-size: 26px}
+    .LocalArea ul li img{ max-height:75px }
+
+    .Footer .col-sm-2 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%;}
+    footer .Footer h1{ font-size:35px }
+
+    .SolutionsArea .SolutionsBody h3{ font-size:30px }
+
+    .CoreProductArea .CoreProductHead h3{ font-size:30px }
+    .CoreProductArea .CoreProductHead p br{ display:none; }
+
+    .HighlightsArea .HighlightsHead h3{ font-size:25px }
+    .HighlightsArea .HighlightsHead p br{ display:none; }
+
+    .AcceptArea .AcceptHead h2{ font-size:30px }
+    .AcceptArea .AcceptBody{ flex-wrap:wrap; }
+    .AcceptArea .AcceptBody .AcceptLeft{ display:none;  }
+    .AcceptArea .AcceptBody .AcceptRight{ width:100%; padding:0 }
+    .AcceptArea .AcceptBody .AcceptRight article span{ display:block; margin-bottom:20px }
+    .AcceptArea .AcceptBody .AcceptRight article h4{ font-size:25px }
+    .AcceptArea .AcceptBody .AcceptRight article p{ font-size:16px; line-height:26px }
+    .AcceptArea .AcceptBody .AcceptRight article:first-child{ padding-top:0 }
+    .AcceptArea .AcceptBody .AcceptRight article:last-child{ padding-bottom:0; border:none; }
+
+    .StartedArea .StartedBox article h2{ font-size:30px }
+    .StartedArea .StartedBox article h2 span{ max-width:100px }
+
+    .RetailSlide h2{ font-size:26px; line-height:35px; margin:0 0 30px 0 }
+
+    .RetailSlide .carousel-indicators{gap: 0; flex-wrap: wrap; border-radius:10px  }
+    .RetailSlide .carousel-indicators li{ min-width:auto; border-radius:10px; width:115px }
+
+    .RetailSlide .RetailBox{ flex-wrap:wrap; }
+    .RetailSlide .RetailBox figcaption{ width:100% }
+    .RetailSlide .RetailBox figure{ width:100% }
+
+    .DisplayArea .DisplayHead p br{ display:none; }
+
+    .CoreArea .CoreBox article h1{ font-size:36px }
+    .CoreArea .CoreBox article p{ font-size:16px; line-height:24px }
+
+    .CustomArea{ padding-left:20px; padding-right:20px }
+    .CustomArea h3{ font-size:30px }
+    .CustomArea p br{ display:none; }
+
+    .PrinterArea{ padding:50px 0 20px }
+    .PrinterArea .PrinterBoxBody .PrinterBox{ margin-bottom:30px }
+
+    .PaymentCardArea .PaymentCardHead h3{ font-size:25px }
+    .PaymentCardArea .PaymentCardHead p br{ display:none; }
+    .PaymentCardArea .PaymentCardBody{ padding:30px }
+    .PaymentCardArea .PaymentCardBody ul{ flex-wrap:wrap; justify-content:center; gap:15px }
+    .PaymentCardArea .PaymentCardBody ul li{ width:30%  } 
+
+    .FasterArea{ padding:50px 0 30px }
+    .FasterArea .FasterBox{ margin-bottom:30px }
+
+    .TouchArea .TouchHead{ padding:50px 0 35px }
+    .TouchArea .TouchHead h3{ font-size:35px }
+    .TouchArea .TouchHead p {font-size: 15px;line-height: 22px;margin: 0 0 15px 0;}
+    .TouchArea .TouchBody .TouchLeft{ padding:50px 0 40px 0 }
+    .TouchArea .TouchBody .TouchRight{ margin:0; padding:0 }
+
+    .SupportArea .SupportHead h1{ font-size:25px }
+    .SupportArea .SupportBody{ display:block; }
+    .SupportArea .SupportBody p{ margin:0 0 20px 0 }
+    .SupportArea .SupportBody a{ display:inline-block; margin:0 7px }
+    .SupportArea .SupportFooter article aside{ width:100% }
+
+
+}

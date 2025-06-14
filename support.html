@@ -1,381 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>My Pay</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-</head>
-<body>
+    <head>
+        <title>My Pay</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <header>
+            <div class="Header">
+                <div class="container">
+                    <nav class="navbar navbar-expand">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/Logo.png" />
+                        </a>
 
-    <header>
-        <div class="Header">
-            <div class="container">
-                <nav class="navbar navbar-expand">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/Logo.png" />
-                    </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                    Products
-                                </a>
-                                <div class="dropdown-menu product_menu">
-                                    <div class="container">
-                                        <div class="product_box">
-                                            <ul>
-                                                <li class="product_dropdown">
-                                                    <a href="javascript:void(0);">POS Packages</a>
-                                                    <div class="product_submenu">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="pos-core.html">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/1BXsrMLKeBfUNzSuq1hPOR/8b49458fd3df20e982c7815a5bbaea83/PD05653_-_Register_Subnav.png" /></span>
-                                                                    <span>POS Core</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="pos-elite.html">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/56XkDFljFsXkrddxJTEbeo/2d334b209bae844e0d49c6b56b8550ca/PD05653_-_Terminal_Subnav.png" /></span>
-                                                                    <span>POS Elite</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="pos-mini.html">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/4g86hwVhCYMbNdXqRaji23/a44d8fd456480b771d712aa9c2df6db6/stand.png" /></span>
-                                                                    <span>POS Mini</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="pos-pro.html">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/3DOgAgY2mszgUtoy6zvHo2/fd5673c082c91790443fd67f89aeca84/Kiosk.png" /></span>
-                                                                    <span>POS Pro</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="self-order.html">Self Order kiosk</a>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="online-order.html">Online Order</a>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="accesories.html">Accesories</a>
-                                                    <div class="product_submenu">
-                                                        <ul>
-                                                            <li>
-                                                                <a href="">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/1BXsrMLKeBfUNzSuq1hPOR/8b49458fd3df20e982c7815a5bbaea83/PD05653_-_Register_Subnav.png" /></span>
-                                                                    <span>Register</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/56XkDFljFsXkrddxJTEbeo/2d334b209bae844e0d49c6b56b8550ca/PD05653_-_Terminal_Subnav.png" /></span>
-                                                                    <span>Terminal</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/4g86hwVhCYMbNdXqRaji23/a44d8fd456480b771d712aa9c2df6db6/stand.png" /></span>
-                                                                    <span>Stand</span>
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a href="">
-                                                                    <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/3DOgAgY2mszgUtoy6zvHo2/fd5673c082c91790443fd67f89aeca84/Kiosk.png" /></span>
-                                                                    <span>Kisok</span>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="javascript:void(0);">Business Account</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                    Business Areas
-                                </a>
-                                <div class="dropdown-menu business_menu">
-                                    <div class="container">
-                                        <div class="business_box">
-                                            <ul>
-                                                <li class="business_dropdown">
-                                                    <a href="business-beverage.html" data-id="1">Food & Beverage</a>
-                                                    
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="business-retail.html" data-id="2">Retail</a>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="business-services.html" data-id="3">Services</a>
-                                                </li>
-                                                <li class="business_dropdown">
-                                                    <a href="business-ecommerce.html" data-id="4">Ecommerce</a>
-                                                </li>
-                                            </ul>
-                                            <div class="business_submenu">
-                                                <img src="https://cdn.pixabay.com/photo/2017/01/31/09/30/raspberries-2023404_640.jpg" />
-                                                <img src="https://cdn.pixabay.com/photo/2017/04/06/22/48/store-2209526_640.jpg" />
-                                                <img src="https://cdn.pixabay.com/photo/2016/04/02/17/58/service-1303313_640.jpg" />
-                                                <img src="https://cdn.pixabay.com/photo/2017/03/01/10/03/online-sales-2108028_640.jpg" />
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                        Products
+                                    </a>
+                                    <div class="dropdown-menu product_menu">
+                                        <div class="container">
+                                            <div class="product_box">
+                                                <ul>
+                                                    <li class="product_dropdown">
+                                                        <a href="javascript:void(0);">POS Packages</a>
+                                                        <div class="product_submenu">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="pos-core.html">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/1BXsrMLKeBfUNzSuq1hPOR/8b49458fd3df20e982c7815a5bbaea83/PD05653_-_Register_Subnav.png" /></span>
+                                                                        <span>POS Core</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="pos-elite.html">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/56XkDFljFsXkrddxJTEbeo/2d334b209bae844e0d49c6b56b8550ca/PD05653_-_Terminal_Subnav.png" /></span>
+                                                                        <span>POS Elite</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="pos-mini.html">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/4g86hwVhCYMbNdXqRaji23/a44d8fd456480b771d712aa9c2df6db6/stand.png" /></span>
+                                                                        <span>POS Mini</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="pos-pro.html">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/3DOgAgY2mszgUtoy6zvHo2/fd5673c082c91790443fd67f89aeca84/Kiosk.png" /></span>
+                                                                        <span>POS Pro</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="self-order.html">Self Order kiosk</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="online-order.html">Online Order</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="accesories.html">Accesories</a>
+                                                        <div class="product_submenu">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/1BXsrMLKeBfUNzSuq1hPOR/8b49458fd3df20e982c7815a5bbaea83/PD05653_-_Register_Subnav.png" /></span>
+                                                                        <span>Register</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/56XkDFljFsXkrddxJTEbeo/2d334b209bae844e0d49c6b56b8550ca/PD05653_-_Terminal_Subnav.png" /></span>
+                                                                        <span>Terminal</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/4g86hwVhCYMbNdXqRaji23/a44d8fd456480b771d712aa9c2df6db6/stand.png" /></span>
+                                                                        <span>Stand</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="">
+                                                                        <span><img src="https://images.ctfassets.net/2d5q1td6cyxq/3DOgAgY2mszgUtoy6zvHo2/fd5673c082c91790443fd67f89aeca84/Kiosk.png" /></span>
+                                                                        <span>Kisok</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="javascript:void(0);">Business Account</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                        Business Areas
+                                    </a>
+                                    <div class="dropdown-menu business_menu">
+                                        <div class="container">
+                                            <div class="business_box">
+                                                <ul>
+                                                    <li class="business_dropdown">
+                                                        <a href="business-beverage.html" data-id="1">Food & Beverage</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="business-retail.html" data-id="2">Retail</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="business-services.html" data-id="3">Services</a>
+                                                    </li>
+                                                    <li class="business_dropdown">
+                                                        <a href="business-ecommerce.html" data-id="4">Ecommerce</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="business_submenu">
+                                                    <img src="https://cdn.pixabay.com/photo/2017/01/31/09/30/raspberries-2023404_640.jpg" />
+                                                    <img src="https://cdn.pixabay.com/photo/2017/04/06/22/48/store-2209526_640.jpg" />
+                                                    <img src="https://cdn.pixabay.com/photo/2016/04/02/17/58/service-1303313_640.jpg" />
+                                                    <img src="https://cdn.pixabay.com/photo/2017/03/01/10/03/online-sales-2108028_640.jpg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="support.html">Support</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:void(0);">+45 51880730</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link Login" href="javascript:void(0);">Log in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link Touch" href="started.html">Get Started</a>
+                                </li>
+                                <li class="nav-item Languauge">
+                                    <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('en')">English</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('da')">Danish</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('es')">Spanish</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('de')">German</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('fr')">French</a></li>
+                                        <li><a href="javascript:void(0);" onclick="doTranslate('sv')">Swedish</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div id="google_translate_element" style="display: none;"></div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="SupportArea">
+                <div class="container">
+                    <div class="SupportHead">
+                        <h1>Need assistance? Find it here.</h1>
+                        <form>
+                            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" placeholder="Search questions, keywords, topics" />
+                        </form>
+                    </div>
+                    <div class="SupportBody">
+                        <p>Sign in for expedited support</p>
+                        <a href="javascript:void(0)'" class="Login">Sign In</a>
+                        <a href="javascript:void(0)'" class="Register">Sign Up</a>
+                    </div>
+                    <div class="SupportFooter">
+                        <h3>Topics</h3>
+                        <article>
+                            <aside>
+                                <div>
+                                    <h4>Sales</h4>
+                                    <span class="Icon"><img src="images/Support-1.png" /> </span>
+                                    <p>+45 51880730</p>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="support.html">Support</a>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);">+45 51880730</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link Login" href="javascript:void(0);">Log in</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link Touch" href="started.html">Get Started</a>
-                            </li>
-                            <li class="nav-item Languauge">
-                                <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                    <i class="fa fa-globe" aria-hidden="true"></i>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('en')">English</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('da')">Danish</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('es')">Spanish</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('de')">German</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('fr')">French</a></li>
-                                    <li><a href="javascript:void(0);" onclick="doTranslate('sv')">Swedish</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div id="google_translate_element" style="display: none;"></div>
+                            </aside>
+                            <aside>
+                                <div>
+                                    <h4>POS Support</h4>
+                                    <span class="Icon"><img src="images/Support-2.png" /> </span>
+                                    <p>info@mypay.nu</p>
+                                </div>
+                            </aside>
+                            <aside>
+                                <div>
+                                    <h4>Payment Support</h4>
+                                    <span class="Icon"><img src="images/Support-3.png" /> </span>
+                                    <p>info@mypay.nu</p>
+                                </div>
+                            </aside>
+                            <aside>
+                                <div>
+                                    <h4>FAQ</h4>
+                                    <span class="Icon"><img src="images/Support-4.png" /> </span>
+                                    <h6>
+                                        <a href="javascript:void(0);" class="Faq">FAQ</a>
+                                        <a href="javascript:void(0);" class="Faq">Exisitng Customer</a>
+                                    </h6>
+                                </div>
+                            </aside>
+                        </article>
                     </div>
-                </nav>
+                </div>
             </div>
-        </div>
-    </header>
-    
-    <section>
-        <div class="SupportArea">
+        </section>
+
+        <footer>
             <div class="container">
-                <div class="SupportHead">
-                    <h1>Need assistance? Find it here.</h1>
-                    <form>
-                        <span><i class="fa fa-search" aria-hidden="true"></i></span>
-                        <input type="text" class="form-control" placeholder="Search questions, keywords, topics">
-                    </form>
+                <div class="Footer">
+                    <h1>Make it Simple.</h1>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>&nbsp;</h3>
+                                <a href="index.html">
+                                    <img src="images/Footer-Logo.png" style="filter: brightness(0) invert(1);" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>Business Types</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0);">Restaurant</a></li>
+                                    <li><a href="javascript:void(0);">Cantine</a></li>
+                                    <li><a href="javascript:void(0);">Fast Casual</a></li>
+                                    <li><a href="javascript:void(0);">Bar </a></li>
+                                    <li><a href="javascript:void(0);">Bazar</a></li>
+                                    <li><a href="javascript:void(0);">Grocery store</a></li>
+                                    <li><a href="javascript:void(0);">Beauty Salon</a></li>
+                                    <li><a href="javascript:void(0);">Barbershop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>&nbsp;</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0);">Hair Salon</a></li>
+                                    <li><a href="javascript:void(0);">Nail Salon</a></li>
+                                    <li><a href="javascript:void(0);">Day Spa</a></li>
+                                    <li><a href="javascript:void(0);">Tattoo & Piercing</a></li>
+                                    <li><a href="javascript:void(0);">Fitness</a></li>
+                                    <li><a href="javascript:void(0);">Professional Services</a></li>
+                                    <li><a href="javascript:void(0);">Home & Repair</a></li>
+                                    <li><a href="javascript:void(0);">Franchises</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>Products</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0);">POS</a></li>
+                                    <li><a href="javascript:void(0);">Payments</a></li>
+                                    <li><a href="javascript:void(0);">Self order</a></li>
+                                    <li><a href="javascript:void(0);">Online order</a></li>
+                                    <li><a href="javascript:void(0);">Accesories</a></li>
+                                    <li><a href="javascript:void(0);">Business bank account</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>Support</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0);">KYC</a></li>
+                                    <li><a href="javascript:void(0);">Privacy Policy </a></li>
+                                    <li><a href="javascript:void(0);">Terms & Conditions </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div class="Foots">
+                                <h3>Contact us</h3>
+                                <p>
+                                    <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span> <a href="">info@mypay.nu</a>
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-mobile" aria-hidden="true"></i></span> <a href="">+45 51 88 07 30</a>
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-globe" aria-hidden="true"></i></span> <a href="">www.mypay.nu</a>
+                                </p>
+                                <ol>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="SupportBody">
-                    <p>Sign in for expedited support</p>
-                    <a href="javascript:void(0)'" class="Login">Sign In</a>
-                    <a href="javascript:void(0)'" class="Register">Sign Up</a>
-                </div>
-                <div class="SupportFooter">
-                    <h3>Topics</h3>
-                    <article>
-                        <aside>
-                            <div>
-                                <h4>Sales</h4>
-                                <span class="Icon"><img src="images/Support-1.png"> </span>
-                                <p>+45 51880730</p>
-                            </div>
-                        </aside>
-                        <aside>
-                            <div>
-                                <h4>POS Support</h4>
-                                <span class="Icon"><img src="images/Support-2.png"> </span>
-                                <p>info@mypay.nu</p>
-                            </div>
-                        </aside>
-                        <aside>
-                            <div>
-                                <h4>Payment Support</h4>
-                                <span class="Icon"><img src="images/Support-3.png"> </span>
-                                <p>info@mypay.nu</p>
-                            </div>
-                        </aside>
-                        <aside>
-                            <div>
-                                <h4>FAQ</h4>
-                                <span class="Icon"><img src="images/Support-4.png"> </span>
-                                <h6>
-                                    <a href="javascript:void(0);" class="Faq">FAQ</a>
-                                    <a href="javascript:void(0);" class="Faq">Exisitng Customer</a>
-                                </h6>
-                            </div>
-                        </aside>
-                    </article>
+
+                <div class="Copyright">
+                    <p>© 2025 Copyright all right reserved by MyPay.</p>
                 </div>
             </div>
-        </div>
-    </section>
- 
-    <footer>
-        <div class="container">
-            <div class="Footer">
-                <h1>Make it Simple.</h1>
-                <div class="row">
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>&nbsp;</h3>
-                            <a href="index.html">
-                                <img src="images/Footer-Logo.png" style="filter: brightness(0) invert(1);">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>Business Types</h3>
-                            <ul> 
-                                <li><a href="javascript:void(0);">Restaurant</a></li>
-                                <li><a href="javascript:void(0);">Cantine</a></li>
-                                <li><a href="javascript:void(0);">Fast Casual</a></li>
-                                <li><a href="javascript:void(0);">Bar </a></li>
-                                <li><a href="javascript:void(0);">Bazar</a></li>
-                                <li><a href="javascript:void(0);">Grocery store</a></li>
-                                <li><a href="javascript:void(0);">Beauty Salon</a></li> 
-                                <li><a href="javascript:void(0);">Barbershop</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>&nbsp;</h3>
-                            <ul>  
-                                <li><a href="javascript:void(0);">Hair Salon</a></li>
-                                <li><a href="javascript:void(0);">Nail Salon</a></li>
-                                <li><a href="javascript:void(0);">Day Spa</a></li>
-                                <li><a href="javascript:void(0);">Tattoo & Piercing</a></li>
-                                <li><a href="javascript:void(0);">Fitness</a></li>
-                                <li><a href="javascript:void(0);">Professional Services</a></li>
-                                <li><a href="javascript:void(0);">Home & Repair</a></li>
-                                <li><a href="javascript:void(0);">Franchises</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>Products</h3>
-                            <ul> 
-                                <li><a href="javascript:void(0);">POS</a></li> 
-                                <li><a href="javascript:void(0);">Payments</a></li> 
-                                <li><a href="javascript:void(0);">Self order</a></li> 
-                                <li><a href="javascript:void(0);">Online order</a></li> 
-                                <li><a href="javascript:void(0);">Accesories</a></li> 
-                                <li><a href="javascript:void(0);">Business bank account</a></li> 
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="col-sm-2">
-                        <div class="Foots"> 
-                            <h3>Support</h3>
-                            <ul>
-                                <li><a href="javascript:void(0);">KYC</a></li>
-                                <li><a href="javascript:void(0);">Privacy Policy </a></li>
-                                <li><a href="javascript:void(0);">Terms & Conditions </a></li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="col-sm-2">
-                        <div class="Foots">
-                            <h3>Contact us</h3>
-                            <p><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>  <a href="">info@mypay.nu</a>  </p>
-                            <p><span><i class="fa fa-mobile" aria-hidden="true"></i></span>  <a href="">+45 51 88 07 30</a>   </p>
-                            <p><span><i class="fa fa-globe" aria-hidden="true"></i></span>  <a href="">www.mypay.nu</a>  </p>
-                            <ol>
-                                <li><a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div> 
+        </footer>
 
-            <div class="Copyright">
-                <p>© 2025 Copyright all right reserved by MyPay.</p>
-            </div>
-        </div>
-    </footer>
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scrolla.jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
-        }
-    </script>
-
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    <script>
-        function doTranslate(lang) {
-            const select = document.querySelector("select.goog-te-combo");
-            if (select) {
-                select.value = lang;
-                select.dispatchEvent(new Event("change"));
+        <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scrolla.jquery.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
             }
-        }
-    </script>
+        </script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".dropdown").hover(
-            function () {
-                $(".dropdown-menu", this).stop(true, true).slideDown(400);
-                $("body").toggleClass("open");
-            },
-            function () {
-                 $(".dropdown-menu", this).hide()
-                // $(".dropdown-menu", this).stop(true, true).slideUp(400);
-                 $("body").toggleClass("open");
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <script>
+            function doTranslate(lang) {
+                const select = document.querySelector("select.goog-te-combo");
+                if (select) {
+                    select.value = lang;
+                    select.dispatchEvent(new Event("change"));
+                }
             }
-        );
-        $(".Languauge").hover(
-            function () {
-                $(".dropdown-menu", this).stop(true, true).slideDown(400);
-            },
-            function () {
-                $(".dropdown-menu", this).stop(true, true).slideUp(400);
-            }
-        );
-    });
-</script>
-    
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.business_dropdown a').hover(function(){
-                var dataId = $(this).data('id');
-                console.log("dataId",dataId)
-                $('.business_submenu').attr('data-id', dataId);
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".dropdown").hover(
+                    function () {
+                        $(".dropdown-menu", this).stop(true, true).slideDown(400);
+                        $("body").toggleClass("open");
+                    },
+                    function () {
+                        $(".dropdown-menu", this).hide();
+                        // $(".dropdown-menu", this).stop(true, true).slideUp(400);
+                        $("body").toggleClass("open");
+                    }
+                );
+                $(".Languauge").hover(
+                    function () {
+                        $(".dropdown-menu", this).stop(true, true).slideDown(400);
+                    },
+                    function () {
+                        $(".dropdown-menu", this).stop(true, true).slideUp(400);
+                    }
+                );
             });
-        });
-    </script>
- 
-</body>
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".business_dropdown a").hover(function () {
+                    var dataId = $(this).data("id");
+                    console.log("dataId", dataId);
+                    $(".business_submenu").attr("data-id", dataId);
+                });
+            });
+        </script>
+    </body>
 </html>

@@ -396,10 +396,8 @@ select{cursor: pointer;outline: 0;}
 
 
 .BusinessArea .BusinessHead{
-    position: absolute;
-    top: 60px;
-    width: 100%;
     text-align: center;
+    margin: 0 0 50px 0;
 }
 .BusinessArea .BusinessHead h3{color:#000;font-size:60px;margin:0 0 10px 0;font-weight:800;text-transform:capitalize}
 .BusinessArea .BusinessHead p{font-size: 25px;color:#535252;font-weight:500;line-height:22px;}
@@ -407,18 +405,14 @@ select{cursor: pointer;outline: 0;}
 
 .BusinessArea .BusinessBody{
     text-align: center;
+    margin: 0 0 40px 0;
 }
 .BusinessArea .BusinessBody img{
     max-width: 400px;
 }
 
 
-.BusinessArea .BusinessFooter{
-    position: absolute;
-    bottom: 40px;
-    text-align: center;
-    width: 100%;
-}
+.BusinessArea .BusinessFooter{text-align: center;}
 .BusinessArea .BusinessFooter button{font-size:15px;font-weight:500;letter-spacing:.3px;padding:8px 20px;border-radius:6px;margin:0 10px 0 0}
 .BusinessArea .BusinessFooter button.Offer{border:2px solid #0d4d89;background-color:#0d4d89;color:#fff}
 .BusinessArea .BusinessFooter button.Login{border:2px solid #0d4d89;background-color:#fff;color:#0d4d89}
@@ -744,7 +738,7 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 .AcceptArea .AcceptBody .AcceptRight article p{font-size:18px;line-height:29px}
 
 .RetailSlide{padding:50px 0 50px 0}
-.RetailSlide h2{font-size:56px!important;line-height:110%!important;font-weight:800;text-align:center;margin:0 0 60px 0}
+.RetailSlide h2{font-size:56px ;line-height:110% ;font-weight:800;text-align:center;margin:0 0 60px 0}
 .RetailSlide .carousel-indicators{position:relative;background:#d9d9d9;left:auto;right:auto;bottom:auto;margin:0 auto 50px;display:inline-flex;border-radius:50px;padding:10px 10px;gap:20px}
 .RetailSlide .carousel-indicators li{margin:0;border:none;text-indent:0;width:auto;height:auto;background-color:#fff0;padding:10px 20px;border-radius:50px;min-width:110px;text-align:center;opacity:1;font-size:16px;font-weight:700}
 .RetailSlide .carousel-indicators li:hover{background-color:#fff}
@@ -803,7 +797,20 @@ footer .Copyright p{text-align:center;color:#fff;font-size:14px;font-weight:500;
 
 
  
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
 
+/* Show on hover */
+.nav-item:hover .dropdown-menu {
+  max-height: 1000px; /* Enough height to fit content */
+  opacity: 1;
+  visibility: visible;
+}
 
 
 
